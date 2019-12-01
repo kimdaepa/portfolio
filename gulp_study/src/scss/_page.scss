@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+@import 'vendors/icon-sprite.scss';
+
+#wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  height: 100%;
+  min-width: 1000px;
+  font-family: NanumSquare, 나눔스퀘어, NanumGothic, "나눔고딕", sans-serif;
+  background-color: yellow;
+}
+
+// header
+.header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: skyblue;
+}
+
+//container
+.container {
+  text-align: center;
+  input {
+    width: 100%;
+    height: 30px;
+    margin: 30px 0;
+    background-color: #999;
+    border:0;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    &::placeholder {
+      color: #f00;
+    }
+  }
+  .icon-ico-del {
+    @include sprite($icon-ico-del) ;
+  }
+  .test-icon {
+    @include sprite($icon-ico-home) ;
+  }
+}
+
+// footer
+.footer {
+  height: 80px;
+  margin-top: auto;
+  background: #101010;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  line-height: 80px;
+}
