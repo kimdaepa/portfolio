@@ -1,0 +1,88 @@
+<template>
+  <header :class="$style.header">
+      <div :class="$style.inner">
+        <h1 :class="$style.logo">
+          <a href="/">Logo</a>
+        </h1>
+
+        <nav :class="$style.nav">
+          <BaseTab :lists="gnblist" />
+        </nav>
+      </div>
+    </header>
+</template>
+
+<script>
+import BaseTab from '@/components/base-tab'
+
+// header nav에 필요한 데이터 값 배열
+const gnblist = [
+  {
+    text: 'ABOUT',
+    href: '/ABOUT'
+  },
+  {
+    text: 'TEAM',
+    href: '/TEAM'
+  },
+  {
+    text: 'WORK',
+    href: '/WORK'
+  },
+  {
+    text: 'CONTACT',
+    href: '/CONTACT'
+  }
+]
+
+export default {
+  name: 'BaseHeader',
+  components: {
+    BaseTab
+  },
+  // gnb 배열을 사용하겠다고 선언하자
+  data () {
+    return {
+      gnblist
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style module lang="scss">
+.header {
+  position: relative;
+  background: #fff;
+  z-index: 100;
+
+  .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  font-size: 24px;
+  height: 20px;
+  color: #000;
+  line-height: 20px;
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.nav {
+  margin-left: auto;
+}
+</style>
