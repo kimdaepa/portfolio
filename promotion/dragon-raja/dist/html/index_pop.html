@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>MMORPG로 만나는 새로운 전설, 드래곤라자2 CBT</title>
+<link rel="stylesheet" href="../css/dragonraja.css">
+
+<script src="../js/dragonraja.js"></script>
+</head>
+
+<body class="about">
+<div class="wrap">
+  <!--[D] white 스타일 클래스 white 추가 -->
+<header class="">
+    <button type="button" class="btn_sound"><span class="blind">사운드 on/off</span></button>
+    <!--[D] 로고 축소 클래스 zoom -->
+    <h1 class="bi"><a href="#"><span class="blind">DRAGON RAJA 2</span></a></h1>
+    <ul class="snb">
+        <li class="text1"><a href="#content1"><span class="blind">사전예약</span></a></li>
+        <li class="text2"><a href="#content2"><span class="blind">이벤트</span></a></li>
+        <li class="text3"><a href="#content3"><span class="blind">게임소개</span></a></li>
+        <li class="text4"><a href="#content4"><span class="blind">미디어</span></a></li>
+    </ul>
+    <a href="#content1" class="banner"><span class="blind">드래곤라자2 사전예약</span></a>
+
+    <!--<iframe src="../audio/silence.mp3" style="display: none;"></iframe>-->
+    <audio autoplay loop id="backgroundAudio" src="../audio/bgm.mp4"></audio>
+</header>
+
+  <!-- container -->
+  <div class="container">
+    <div class="full_page main">
+      <h1 class="blind">드래곤 라자2</h1>
+      <p class="blind">MOBILE MMORPG DRAGONRAJA 2</p>
+      <button type="button" class="btn_play"><span class="blind">드라곤라자2 메인 영상 플레이</span></button>
+    </div>
+
+    <div class="full_page content1" style="top:100%" id="content1">
+      <div class="section">
+        <div class="blind">
+          <h2>드래곤라자2 CBT 사전예약</h2>
+          <p>대한민국 판타지의 전설 드래곤라자의 새로운 이야기!</p>
+          <h3>INVITATION</h3>
+          <p>구글 플레이 스토어와 원스토어를 통해서 CBT에 참여하실 수 있습니다.</p>
+        </div>
+        <div class="inp_tel">
+            <strong class="blind">010</strong>
+            <input type="tel" placeholder="숫자만 입력해 주세요">
+         </div>
+         <!--[D] 숫자일 때와 텍스트 일때 정렬 문제로 input 입력 할 때 active 추가 -->
+         <div class="inp_check">
+            <input type="checkbox" id="privacy_check" class="blind">
+            <label for="privacy_check"><span class="blind">개인정보 수집, 이용 및 SMS 수신에 동의합니다.</span></label>
+         </div>
+         <a href="#" class="link privacy"><span class="blind">개인정보 수집, 이용 및 SMS 수신 동의 약관 자세히보기</span></a>
+         <a href="#" class="link booking"><span class="blind">사전예약하기</span></a>
+      </div>
+    </div>
+
+    <div class="full_page content2" style="top:200%" id="content2">
+        <div class="section">
+          <div class="blind">
+            <h2>사전 예약 이벤트</h2>
+            <ul>
+              <li>
+                <dl>
+                  <dt>EVENT.1 레벨달성 이벤트!</dt>
+                  <dd>최고 레벨이 되어 <strong>닌텐도 스위치</strong> 받자!</dd>
+                  <dd>사전예약 기간 최고 레벨 달성! '화렌차의 전장' 최고 포인트 획득!</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>EVENT.2 인증 이벤트!</dt>
+                  <dd><strong>드래곤 인증</strong> 하고 선물 받자!</dd>
+                  <dd>드래곤라자2 페이지/홍보영상 SNS 공유! 드래곤 스크린샷 공식카페에 인증!</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>EVENT.3 수집 이벤트!</dt>
+                  <dd><strong>드래곤라자2 단어 모아</strong> 최강 드래곤 받자!</dd>
+                  <dd>게임 내 '드', '래', '곤', '라', '자', '2'를 모아 최강 드래곤과 함께 모험하자!</dd>
+                </dl>
+              </li>
+            </ul>
+            <p>이벤트 조건 및 상세한 경품 확인은 드래곤라자 공식 카페에서 확인하세요!</p>
+          </div>
+          <a href="#" class="link go_cafe"><span class="blind">공식카페 가기</span></a>
+        </div>
+    </div>
+
+    <div class="full_page content3" style="top:300%" id="content3">
+        <div class="section">
+          <div class="blind">
+            <h2>드래곤라자2 게임소개</h2>
+            <p>MOBILE MMORPG DRAGONRAJA 2</p>
+          </div>
+
+          <!-- 게임소개 카드 -->
+          <ul class="card_list">
+            <li class="item item1">
+              <a href="#synopsis_section">
+                <!--[D] 활성화 active 클래스 추가-->
+                <span class="title_img active"></span>
+                <dl class="blind">
+                  <dt>SYNOPSIS</dt>
+                  <dd>드래곤라자 스토리</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="item item2">
+              <a href="#character_section">
+                <span class="title_img"></span>
+                <dl class="blind">
+                  <dt>CHARACTER</dt>
+                  <dd>드래곤라자 캐릭터</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="item item3">
+              <a href="#dragon_section">
+                <span class="title_img"></span>
+                <dl class="blind">
+                  <dt>DRAGON</dt>
+                  <dd>드래곤라자 드래곤</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="item item4">
+              <a href="#colleague_section">
+                <span class="title_img"></span>
+                <dl class="blind">
+                  <dt>COLLEAGUE</dt>
+                  <dd>드래곤라자 동료</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+          <!-- 게임소개 카드 -->
+
+          <!-- 게임소개 텍스트 영역 -->
+          <div class="info_wrap">
+            <div class="info_content">
+              <!--[D] 각소개 영역(시놉시스, 캐릭터, 드래곤, 동료) 활성화 active 추가-->
+              <!-- 시놉시스 -->
+              <!--[D] 다음 소개 보기 next 추가-->
+              <div class="synopsis_section active" id="synopsis_section">
+                <dl class="blind">
+                  <dt>synopsis</dt>
+                  <dd>
+                      드래곤 라자...
+                      인간과 드래곤을 이어주는 매개체. 
+                      오직 인간에게만 허락된 이 능력은 라자를 만들어 낸 드래곤 로드와 핸드레이크도
+                      예상하지 못한 방향으로 흘러갔다.
+                      라자의 혈통을 유지하고 그것을 통해 기득권을 확보하려는 인간들,
+                      인간에게 점차 동화된 드래곤들,
+                      그것은 인간과 드래곤 양쪽 모두에게 상처를 주고 말았다.
+                      가장 강력했던 드래곤 크라드메서는 그 어떤 드래곤보다 심하게 동화되고 말았으며
+                      이는 결국 자신을 불태우는 참혹한 결말을 맞이하고 말았다.
+                      인간의 욕망은 끝이 없고 그것은 설령 같은 인간이라도 이해하기 어려운 법.
+                      크라드메서의 죽음이 가져온 충격에서 헤어날 틈도 없이 세상에는
+                      또 다른 어둠이 드리우기 시작했다.
+                      유피넬과 헬카네스 모두의 축복을 받은 존재.
+                      시간의 장인이며 망각이라는 은혜를 부여받은 존재.
+                      인간의 탐욕은 다시 한 번 세상의 근간을 송두리째 뒤흔든다.
+                  </dd>
+                </dl>
+              </div>
+              <!-- //시놉시스-->
+
+              <!-- 캐릭터 -->
+              <!-- [D] 캐릭터별 노출 클래스 추가 character1~5-->
+              <div class="character_section character1" id="character_section">
+                <dl class="text_box text1">
+                  <dt class="blind">ASSASSIN / 암살자</dt>
+                  <dd class="blind">
+                    오랜 세월 나이트호크와 일하며 수많은 상대를 저승으로 보낸 매서운 실력자.
+                    타인을 신뢰하지 않는 차가운 성격이지만 뼛속까지 악인은 아닌 듯하다.
+                  </dd>
+                </dl>
+                <dl class="text_box text2">
+                  <dt class="blind">LANCER / 창기사</dt>
+                  <dd class="blind">
+                    일스 공국의 장미 기사단 소속 기사. 임무를 받고 바이서스 임펠에 왔다.
+                    정의감 넘치며 기사도의 표본. 정의를 위해선 어떤 두려움도 이겨낸다.
+                  </dd>
+                </dl>
+                <dl class="text_box text3">
+                  <dt class="blind">BERSERKER / 광전사</dt>
+                  <dd class="blind">
+                    검과 파괴의 레티를 섬기는 프리스트였으나 규율을 어겨 파면당했다. 
+                    이후 신의 권능을 잃고 거대한 검을 휘두르며 전국을 떠돈다.
+                  </dd>
+                </dl>
+                <dl class="text_box text4">
+                  <dt class="blind">CAVALIER / 창술사</dt>
+                  <dd class="blind">
+                    바이서스 왕국 출신으로 어려서부터 왕국의 기사가 되는 것이 꿈이었다.
+                    그리고 그 꿈을 실현하기 직전 예상하지 못한 상황에 직면하게 된다.
+                  </dd>
+                </dl>
+                <dl class="text_box text5">
+                  <dt class="blind">WITCH / 마법사</dt>
+                  <dd class="blind">
+                    어린 시절 빛의 탑에 들어가 뛰어난 재능으로 선배들마저 뛰어넘었다.
+                    유쾌하고 매사 낙관적인 성격으로 쉽게 주변의 호감을 얻는 성격.
+                  </dd>
+                </dl>
+                <ul class="menu_list">
+                  <li class="item item1">
+                    <a href="#" data-index="1"><span class="blind">ASSASSIN / 암살자</span></a>
+                  </li>
+                  <li class="item item2">
+                    <a href="#" data-index="4"><span class="blind">LANCER / 창기사</span></a>
+                  </li>
+                  <li class="item item3">
+                    <a href="#" data-index="2"><span class="blind">BERSERKER / 광전사</span></a>
+                  </li>
+                  <li class="item item4">
+                    <a href="#" data-index="5"><span class="blind">CAVALIER / 창술사</span></a>
+                  </li>
+                  <li class="item item5">
+                    <a href="#" data-index="3"><span class="blind">WITCH / 마법사</span></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //캐릭터-->
+
+              <!-- 드래곤 -->
+              <!-- [D] 캐릭터별 노출 클래스 추가 dragon1~7-->
+              <div class="dragon_section dragon1" id="dragon_section">
+                <dl class="text_box text1">
+                  <dt class="blind">에오르마라</dt>
+                  <dd class="blind">
+                    영광의 7주 전쟁 이후 태어난 어린 드래곤. 그렇다 해도 100년은 넘게 살았다.
+                    드래곤 로드의 말은 무조건 믿는 단순하면서도 충직한 드래곤이다.
+                  </dd>
+                </dl>
+                <dl class="text_box text2">
+                  <dt class="blind">흐로스벨루</dt>
+                  <dd class="blind">
+                    냉기를 내뿜는 극지방의 지배자. 인간이라곤 찾아볼 수도 없는 북해 주변을 
+                    떠돌았는데 그저 인간과 엮이면 귀찮아서가 이유인듯하다.
+                  </dd>
+                </dl>
+                <dl class="text_box text3">
+                  <dt class="blind">타이콘로스</dt>
+                  <dd class="blind">
+                    누구보다 빠른 비행 속도를 지닌 드래곤으로
+                    그 능력을 살려 드래곤 로드의 전령 역할을 충실히 수행하고 있다.
+                  </dd>
+                </dl>
+                <dl class="text_box text4">
+                  <dt class="blind">페일레이커</dt>
+                  <dd class="blind">
+                    같은 드래곤들조차 그 속을 모르겠다고 평하는 드래곤.
+                    음흉한 것인지 신중한 것인지 도통 알 수가 없다. 
+                  </dd>
+                </dl>
+                <dl class="text_box text5">
+                  <dt class="blind">브리살리드</dt>
+                  <dd class="blind">
+                    엘프들의 거처 인근에 사는 드래곤. 엘프들과는 이래저래 알고 지내는 모양이다.
+                    최근 들어 상당히 곤란한 상황에 직면해 있다는 소식이 전해지는데…
+                  </dd>
+                </dl>
+                <dl class="text_box text6">
+                  <dt class="blind">데메탈리르</dt>
+                  <dd class="blind">
+                    폭군이란 말이 부족할 정도로 괴팍하고 난폭한 드래곤.
+                    너무 난폭했던 나머지 드래곤 로드의 명으로 다른 차원으로 쫓겨난 적도 있다.
+                  </dd>
+                </dl>
+                <dl class="text_box text7">
+                  <dt class="blind">팔라메키드</dt>
+                  <dd class="blind">
+                    정신적인 스승인 드래곤 에할라파드가 드래곤 로드에 대한 반감을 표하자
+                    얼마 동안 혼란에 빠져 있었다. 이후 독자적으로 행동하고 있다.
+                  </dd>
+                </dl>
+                <ul class="menu_list">
+                  <li class="item item1">
+                      <a href="#" data-index="1"><span class="blind">에오르마라</span></a>
+                  </li>
+                  <li class="item item2">
+                    <a href="#" data-index="5"><span class="blind">흐로스벨루</span></a>
+                  </li>
+                  <li class="item item3">
+                    <a href="#" data-index="2"><span class="blind">타이콘로스</span></a>
+                  </li>
+                  <li class="item item4">
+                    <a href="#" data-index="6"><span class="blind">페일레이커</span></a>
+                  </li>
+                  <li class="item item5">
+                    <a href="#" data-index="3"><span class="blind">브리살리드</span></a>
+                  </li>
+                  <li class="item item6">
+                    <a href="#" data-index="7"><span class="blind">데메탈리르</span></a>
+                  </li>
+                  <li class="item item7">
+                    <a href="#" data-index="4"><span class="blind">팔라케키드</span></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //드래곤-->
+
+              <!-- 동료-->
+              <!-- [D] 캐릭터별 노출 클래스 추가 colleague1~8 -->
+              <div class="colleague_section colleague1" id="colleague_section">
+                <dl class="text_box text1">
+                  <dt class="blind">이루릴 세레니얼</dt>
+                  <dd class="blind">
+                    핸드레이크를 찾아 새로운 마법을 배우기 위해 대륙을 여행하던 도중
+                    후치 일행을 만나 그들과 함께 여행했다. 검술, 마법은 정령술에 능하다.
+                  </dd>
+                </dl>
+                <dl class="text_box text2">
+                  <dt class="blind">아일페사스</dt>
+                  <dd class="blind">
+                    천방지축이란 말로도 표현 못 할 정도로 막무가내에 말버릇도 이상한 소녀.
+                    정체는 드래곤 로드의 딸. 인간의 손에 맡겨져 세상을 여행하게 된다.
+                  </dd>
+                </dl>
+                <dl class="text_box text3">
+                  <dt class="blind">샌슨 퍼시발</dt>
+                  <dd class="blind">
+                    헬턴트 영지의 경비대장. 드래곤 아무르타트에게 붙잡힌 동료와
+                    주민들의 몸값을 마련하기 위해 수도로 향했다가 여러가지 일에 휘말렸다.
+                  </dd>
+                </dl>
+                <dl class="text_box text4">
+                  <dt class="blind">시반</dt>
+                  <dd class="blind">
+                    정체를 알 수 없는 청년. 그에 관해 알 수 있는 것은 
+                    그저 드래곤 로드의 말을 전해주는 전달자라는 것 뿐이다.
+                  </dd>
+                </dl>
+                <dl class="text_box text5">
+                  <dt class="blind">페어리퀸 다레니안</dt>
+                  <dd class="blind">
+                    페어리 종족의 여왕. 핸드레이크와는 연인관계였다. 
+                    현재는 레브네인 호수 밑에 자신만의 성을 만들어 지내고 있다. 
+                  </dd>
+                </dl>
+                <dl class="text_box text6">
+                  <dt class="blind">엘리샤</dt>
+                  <dd class="blind">
+                    엘프들의 지식과 지혜가 모두 담겨 있는 그랑엘베르의 도서관을 관리하는
+                    고위 엘프. 현재 남아 있는 엘프 중에서도 손꼽힐 정도로 오래 산 듯 하다. 
+                  </dd>
+                </dl>
+                <dl class="text_box text7">
+                  <dt class="blind">타이번 하이시커</dt>
+                  <dd class="blind">
+                    장님이며 온몸에 기이한 문신이 새겨진 인물.
+                    헬턴트 영지에 나타나 엄청난 마법을 선보이기도 했다. 그 정체는…
+                  </dd>
+                </dl>
+                <dl class="text_box text8">
+                  <dt class="blind">루엘</dt>
+                  <dd class="blind">
+                    바이서스 왕국의 기사. 주변 사람 모두가 기사도의 표본이라 칭하며
+                    왕국의 영웅 칼브린의 재림으로 부를 정도로 대단한 재능을 가지고 있다.
+                  </dd>
+                </dl>
+                <ul class="menu_list">
+                  <li class="item item1">
+                      <a href="#" data-index="1"><span class="blind">이루릴 세레니얼</span></a>
+                  </li>
+                  <li class="item item2">
+                    <a href="#" data-index="5"><span class="blind">아일페사스</span></a>
+                  </li>
+                  <li class="item item3">
+                    <a href="#" data-index="2"><span class="blind">샌슨 퍼시발</span></a>
+                  </li>
+                  <li class="item item4">
+                    <a href="#" data-index="6"><span class="blind">시반</span></a>
+                  </li>
+                  <li class="item item5">
+                    <a href="#" data-index="3"><span class="blind">페어리퀸 다레니안</span></a>
+                  </li>
+                  <li class="item item6">
+                    <a href="#" data-index="7"><span class="blind">엘리샤</span></a>
+                  </li>
+                  <li class="item item7">
+                    <a href="#" data-index="4"><span class="blind">타이번 하이시커</span></a>
+                  </li>
+                  <li class="item item8">
+                    <a href="#" data-index="8"><span class="blind">루엘</span></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //동료-->
+            </div>
+            <button type="button" class="btn_prev"><span class="blind">이전 보기</span></button>
+            <button type="button" class="btn_next"><span class="blind">다음 보기</span></button>
+          </div>
+          <!-- //게임소개 텍스트 영역 -->
+
+          <!-- 게임소개 이미지 영역 -->
+          <div class="img_wrap">
+            <ul>
+              <!-- [D] 이미지 노출 active 추가 -->
+              <li class="img_box active" id="img_synopsis">
+                <img src="../img/img_synopsis.png" width="842" height="542" alt="드래곤라자 시놉시스 이미지">
+              </li>
+              <li class="img_box" id="img_character1">
+                <img src="../img/img_character1.png" width="842" height="542" alt="드래곤라자 캐릭터 암살자 이미지">
+              </li>
+              <li class="img_box" id="img_character4">
+                <img src="../img/img_character2.png" width="842" height="542" alt="드래곤라자 캐릭터 창기사 이미지">
+              </li>
+              <li class="img_box" id="img_character2">
+                <img src="../img/img_character3.png" width="842" height="542" alt="드래곤라자 캐릭터 광전사 이미지">
+              </li>
+              <li class="img_box" id="img_character5">
+                <img src="../img/img_character4.png" width="842" height="542" alt="드래곤라자 캐릭터 창술사 이미지">
+              </li>
+              <li class="img_box" id="img_character3">
+                <img src="../img/img_character5.png" width="842" height="542" alt="드래곤라자 캐릭터 마법사 이미지">
+              </li>
+              <li class="img_box" id="img_dragon1">
+                <img src="../img/img_dragon1.png" width="842" height="542" alt="드래곤라자 드래곤 에오르마라 이미지">
+              </li>
+              <li class="img_box" id="img_dragon5">
+                <img src="../img/img_dragon2.png" width="842" height="542" alt="드래곤라자 드래곤 흐로스벨루 이미지">
+              </li>
+              <li class="img_box" id="img_dragon2">
+                <img src="../img/img_dragon3.png" width="842" height="542" alt="드래곤라자 드래곤 타이콘로스 이미지">
+              </li>
+              <li class="img_box" id="img_dragon6">
+                <img src="../img/img_dragon4.png" width="842" height="542" alt="드래곤라자 드래곤 페일레이커 이미지">
+              </li>
+              <li class="img_box" id="img_dragon3">
+                <img src="../img/img_dragon5.png" width="842" height="542" alt="드래곤라자 드래곤 브리살리드 이미지">
+              </li>
+              <li class="img_box" id="img_dragon7">
+                <img src="../img/img_dragon6.png" width="842" height="542" alt="드래곤라자 드래곤 데메탈리르 이미지">
+              </li>
+              <li class="img_box" id="img_dragon4">
+                <img src="../img/img_dragon7.png" width="842" height="542" alt="드래곤라자 드래곤 팔라메키드 이미지">
+              </li>
+              <li class="img_box" id="img_colleague1">
+                <img src="../img/img_colleague1.png" width="842" height="542" alt="드래곤라자 동료 이루릴 세레니얼 이미지">
+              </li>
+              <li class="img_box" id="img_colleague5">
+                <img src="../img/img_colleague2.png" width="842" height="542" alt="드래곤라자 동료 아일페사스 이미지">
+              </li>
+              <li class="img_box" id="img_colleague2">
+                <img src="../img/img_colleague3.png" width="842" height="542" alt="드래곤라자 동료 샌슨 퍼시발 이미지">
+              </li>
+              <li class="img_box" id="img_colleague6">
+                <img src="../img/img_colleague4.png" width="842" height="542" alt="드래곤라자 동료 시반">
+              </li>
+              <li class="img_box" id="img_colleague3">
+                <img src="../img/img_colleague5.png" width="842" height="542" alt="드래곤라자 동료 페어리퀸 다레니안 이미지">
+              </li>
+              <li class="img_box" id="img_colleague7">
+                <img src="../img/img_colleague6.png" width="842" height="542" alt="드래곤라자 동료 엘리샤 이미지">
+              </li>
+              <li class="img_box" id="img_colleague4">
+                <img src="../img/img_colleague7.png" width="842" height="542" alt="드래곤라자 동료 타이번 하이시커 이미지">
+              </li>
+              <li class="img_box" id="img_colleague8">
+                <img src="../img/img_colleague8.png" width="842" height="542" alt="드래곤라자 동료 루엘 이미지">
+              </li>
+            </ul>
+          </div>
+          <!-- //게임소개 이미지 영역 -->
+        </div>
+    </div>
+
+    <div class="full_page content4" style="top:400%" id="content4">
+      <div class="section">
+          <div class="blind">
+            <h2>드래곤라자2 게임 영상</h2>
+          </div>
+          <button type="button" class="btn_play"><span class="blind">드라곤라자2 게임 영상 플레이</span></button>
+      </div>
+      <footer>
+          <img src="../img/img_footer.png" width="251" height="28" alt="이영도 판타지 장편소설 원작, 황금가지, Copyright(c)2018 SKYMOON All rights reserved.">
+      </footer>
+    </div>
+    
+  </div>
+  <!-- //container -->
+  <footer>
+</footer>
+
+</div>
+<div class="indicator_area">
+  <ul class="indicator">
+    <li><a href="#top" class="active"><span class="blind"></span></a></li>
+    <li><a href="#content1"><span class="blind">사전예약</span></a></li>
+    <li><a href="#content2"><span class="blind">이벤트</span></a></li>
+    <li><a href="#content3"><span class="blind">게임소개</span></a></li>
+    <li><a href="#content4"><span class="blind">미디어</span></a></li>
+  </ul>
+</div>
+
+<!-- 레이어 팝업 -->
+<!-- 개인 정보 수집 및 이용 동의 -->
+<!--[D] 팝업 활성 시 active 추가-->
+<div class="popup_wrap active" style="position: absolute; height: 4850px">
+  <div class="popup_content pop1" style="margin:0;top: 10px; left: 10px">
+    <div class="blind">
+      <h1>개인 정보 수집 및 이용 동의</h1>
+      <dl>
+        <dt>(주)스카이문스테크놀로지는 다음과 같이 개인정보를 수집 및 이용하고 있습니다.</dt>
+        <dd>- 수집 및 이용 목적 : 게임 및 이벤트 정보 전송</dd>
+        <dd>- 수집 항목 : 휴대폰 번호</dd>
+        <dd>- 보유 및 이용기간 : 이벤트 종료일로부터 6개월 간 보유 및 이용</dd>
+      </dl>
+      <h1>[개인 정보 처리 위탁 안내]</h1>
+      <dl>
+        <dt>(주)스카이문스테크놀로지는 다음과 같이 개인정보 처리 업무를 위탁하고 있으며, 관계 법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다.</dt>
+        <dd>- 위탁 받는 자 : ㈜플레이버게임즈</dd>
+        <dd>- 게임 및 이벤트 정보 전송</dd>
+      </dl>
+      <p>귀하는 드래곤라자2 CBT 사전예약에 필요한 최소한의 개인정보 처리 위탁에 동의하지 않을 수 있습니다. 그러나, 동의를 거부할 경우 사전예약 신청이 불가능 합니다.</p>
+      <p>위 개인정보 처리 위탁에 동의합니다.</p>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+
+  <div class="popup_content pop2" style="margin:0;top: 450px; left: 800px">
+    <div class="blind">
+      <h1>개인 정보 수집 이용 및 SMS 수신에 동의해주세요.</h1>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+  
+  <div class="popup_content pop3" style="margin:0;top: 730px; left: 10px">
+    <div class="blind">
+      <h1>휴대폰 번호를 다시 확인해 주세요.</h1>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+
+  <div class="popup_content pop4" style="margin:0;top: 1000px; left: 10px">
+    <div class="blind">
+      <h1>사전예약 준비중 입니다.</h1>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+  <!-- 접수 확인  -->
+  <div class="popup_content pop6" style="margin:0;top: 1300px; left: 10px">
+    <div class="blind">
+      <h1>CBT 사전 예약이 접수 되었습니다.</h1>
+      <p>감사합니다</p>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+
+  <!-- 접수 종료  -->
+  <div class="popup_content pop7" style="margin:0;top: 1600px; left: 10px">
+    <div class="blind">
+      <h1>CBT가 성황리에 종료되었습니다.</h1>
+      <p>좋은 모습으로 찾아 뵙겠습니다. 감사합니다.</p>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+
+  <div class="popup_content pop8" style="margin:0;top: 1900px; left: 10px">
+    <div class="blind">
+      <h1>이미 CBT 사전 예약이 완료된 휴대폰 번호입니다.</h1>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+</div>
+
+<!-- 메인 영상 재생 팝업  -->
+<div class="popup_wrap" id="movie_layer">
+  <div class="popup_content movie">
+    <div class="movie_box">
+        <iframe width="988" height="556" src="https://www.youtube.com/embed/xE_w4Ebzs_g?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+  </div>
+</div>
+
+<!-- 게임 영상 재생 팝업  -->
+<div class="popup_wrap" id="movie_layer2">
+    <div class="popup_content movie">
+      <div class="movie_box">
+          <iframe width="988" height="556" src="https://www.youtube.com/embed/xE_w4Ebzs_g?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <button type="button" class="btn_pop_close"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div>
+
+<!-- //레이어 팝업 -->
+</body>
+</html>
