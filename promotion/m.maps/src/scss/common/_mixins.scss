@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+// blind
+@mixin blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+// border-radius
+@mixin border-radius($radius...) {
+    border-radius: $radius;
+}
+
+// box-shadow
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+}
+
+// ellipsis
+@mixin ellipsis ($lines: 1) {
+    @if ($lines: 1) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: nowrap;
+    }
+    @else {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: ellipsis;
+        -webkit-box-orient: vertical;
+    }
+}
+
+// clear
+@mixin clear {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+// dimded
+@mixin ly_dimded ($opacity){
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: $opacity;
+    filter: alpha(opacity=$opacity / 100);
+}
+
+// layer popup center
+// @mixin ly_center ($position = absolute, $backward = false, $width = 0, $height = 0) {
+//     @if ($backward) {
+//         margin-top: - $height / 2;
+//         margin-left: - $width / 2;
+//     }
+//     @else {
+//        transform:translate(-50%, -50%);
+//     }
+// }
+
+// break point
+// media query @font-face(ie9), @extend unavailable
+@mixin breakpoint ($point) {
+    @if $point == mobile320 {
+        @media (max-width: 374px) { @content; }
+    }
+    @if $point == mobile {
+        @media (max-width: 767px) { @content; }
+    }
+    @if $point == tablet {
+        @media (min-width: 768px) and (max-width: 1207px) { @content; }
+    }
+    @if $point == pc {
+        @media (min-width: 768px) { @content; }
+    }
+    @if $point == widepc {
+        @media (min-width: 1208px) { @content; }
+    }
+}
+
+@mixin spr_ico{
+    background-repeat: no-repeat;
+    background-image: url(#{$G-path-img}/spr_maps.png);
+    background-size: 100px 300px;
+}

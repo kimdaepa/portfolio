@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko" class="nav_off">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <!--<meta property="og:url" content="사이트URL">-->
+        <meta property="og:title" content="새로워진 네이버 지도">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img/mapsOgImage.png">
+        <meta property="og:image:width" content="800">
+        <meta property="og:image:height" content="800">
+        <meta property="og:description" content="공간을 검색합니다. 생활을 연결합니다.">
+        <title>네이버 지도</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/slick.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+        <script type="text/javascript" src="js/slick.min.js" ></script>
+        <script type="text/javascript" src="js/maps.js" ></script>
+    </head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div id="header" class="header">
+            <div class="header_inner">
+                <h1 class="header_logo_title">
+                    <a href="index.html" class="spr header_logo">
+                        <span class="blind">네이버 지도</span>
+                    </a>
+                </h1>
+                <button type="button" class="menu_button">
+                    <span class="spr">
+                        <span class="blind">네이버 지도 메뉴 버튼</span>
+                    </span>
+                </button>
+
+                <!-- 메뉴 버튼 클릭 시 노출 영역 -->
+                <!-- navigation에 on 추가시 메뉴노출 -->
+                <nav id="nav" class="navigation">
+                    <ul class="global_list">
+                        <li class="list_item"><a href="https://blog.naver.com/naver_map" target="_blank"><span class="r_font">Blog</span></a></li>
+                        <li class="list_item"><a href="https://developers.naver.com/products/map/" target="_blank">오픈<span class="r_font">API</span></a></li>
+                        <li class="list_item"><a href="https://help.naver.com/" target="_blank">고객센터</a></li>
+                    </ul>
+                    <button type="button" class="btn_close"><span class="blind">메뉴 닫기</span></button>
+                </nav>
+                <!-- // 메뉴 버튼 클릭 시 노출 영역 -->
+            </div>
+        </div>
+        <!-- //header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="spot" id="spot">
+                <div class="spot_inner">
+                    <h2 class="spot_title">
+                        네이버 지도
+                    </h2>
+                    <p class="spot_txt">
+                        <span class="g_txt">공간을 검색합니다</span>
+                        <br>
+                        <span class="b_txt">생활을 연결합니다</span>
+                    </p>
+                    <ul class="global_list">
+                        <li class="list_item">
+                            <a href="#spot" class="view_mov _player" data-id="OUIK9EFo7qA">소개 영상 보기</a>
+                        </li>
+                    </ul>
+                    <ul class="global_list appdown">
+                        <li class="list_item">
+                            <a href="https://play.google.com/store/apps/details?id=com.nhn.android.nmap&hl=ko" target="_blank" class="google">
+                                <span class="blind">Google play 바로가기 버튼 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://itunes.apple.com/kr/app/id311867728" target="_blank" class="apple">
+                                <span class="blind">App Store 바로가기 버튼 이미지</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="sopt_notice">2월 초 5.0 업데이트 예정</p>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="content" id="content">
+                <div class="section vector_map" id="vector_map">
+                    <div class="section_inner">
+                        <div class="inner_content">
+                            <strong class="highlight_title">VECTOR MAP</strong>
+                            <div class="mobile_con">
+                                <h3 class="section_title">
+                                    세상과<br>콘텐츠를 담는 지도
+                                </h3>
+                                <p class="section_txt">
+                                    레이어마다 살아있는 정보와 콘텐츠를
+                                    담을 수 있도록, 데이터 최신성과 정확성,
+                                    다양한 개인화와 확장성의 틀을 새롭게
+                                    구축했습니다.
+                                </p>
+                            </div>
+                            <div class="pad_con">
+                                <h3 class="section_title">
+                                    세상과<br>콘텐츠를 담는 지도
+                                </h3>
+                                <p class="section_txt">
+                                    글로벌 표준을 충족하는 확장형 벡터맵을 기반으로, 레이어마다 살아 있는
+                                    정보와 콘텐츠를 담을 수 있도록 데이터 최신성과 정확성, 다양한 개인화와
+                                    확장성의 틀을 새롭게 구축했습니다.
+                                </p>
+                            </div>
+                            <ul class="global_list">
+                                <li class="list_item article_list">
+                                    <a href="https://blog.naver.com/naver_map/221192423505" target="_blank">관련 아티클</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section search_engine">
+                    <div class="section_inner">
+                        <strong class="highlight_title">검색창 일원화</strong>
+                        <h3 class="section_title">
+                            하나의 검색창
+                        </h3>
+                        <p class="section_txt mobile_con">
+                            이제 장소, 버스, 지하철 등 지도 위의 모든
+                            검색은 하나의 검색창에서 시작됩니다.
+                            인스턴트 검색, 지도 듀얼 뷰 등 더욱
+                            풍성하고 편리해진 경험할 수 있습니다.
+                        </p>
+                        <p class="section_txt pad_con">
+                            이제 장소, 버스, 지하철 등 지도 위의 모든 검색은 하나의 검색창에서<br>
+                            시작됩니다. 인스턴트 검색, 지도 듀얼 뷰 등 더욱 풍성하고 편리해진<br>
+                            경험할 수 있습니다.
+                        </p>
+                        <div class="img_area">
+                            <span class="blind">하나의 검색창</span>
+                            <!-- <img src="../img/img_search_object.png" width="348" height="446" alt="하나의 검색창"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section my_map">
+                    <div class="section_inner">
+                        <strong class="highlight_title">개인화</strong>
+                        <h3 class="section_title">
+                            나만의 지도
+                        </h3>
+                        <ul class="global_list my_map_menu">
+                            <!-- [D] 선택시 li에 on 추가 필요 -->
+                            <li class="list_item street on">
+                                <a href="#street" data-slide-index="0" class="btn_street">빠른 길찾기</a>
+                            </li>
+                            <!-- [D] 선택시 li에 on 추가 필요 -->
+                            <li class="list_item bookmark">
+                                <a href="#bookmark" data-slide-index="1" class="btn_bookmark">즐겨찾기</a>
+                            </li>
+                            <!-- [D] 선택시 li에 on 추가 필요 -->
+                            <li class="list_item exploration">
+                                <a href="#exploration" data-slide-index="2" class="btn_exploration" >주변탐색</a>
+                            </li>
+                        </ul>
+                        <!-- 빠른길 찾기-->
+                        <div class="my_map_content_wrap">
+                            <div class="my_map_content showtab street" id="street">
+                                <div class="section_txt mobile_con">
+                                    자주 방문하는 장소나 오늘 예약한 식당,
+                                    즐겨찾기한 버스 정보까지, 나의 이동
+                                    환경에 맞춘 길찾기 정보를 홈에서
+                                    빠르게 확인할 수 있습니다.
+                                </div>
+                                <div class="section_txt pad_con">
+                                    자주 방문하는 장소나 오늘 예약한 식당, 즐겨찾기한 버스 정보까지,<br>
+                                    나의 이동 환경에 맞춘 길찾기 정보를 홈에서 빠르게 확인할 수<br>
+                                    있습니다.
+                                </div>
+                            </div>
+                            <!-- 즐겨 찾기-->
+                            <div class="my_map_content bookmark" id="bookmark">
+                                <div class="section_txt mobile_con">
+                                    가고 싶은 여행지나 유명한 맛집 등
+                                    내가 관심있는 장소를 저장하고,
+                                    폴더별로 분류하여 지도 위에서
+                                    확인할 수 있습니다.
+                                </div>
+                                <div class="section_txt pad_con">
+                                    가고 싶은 여행지나 유명한 맛집 등 내가 관심있는 장소를 저장하고,<br>
+                                    폴더별로 분류하여 지도 위에서 확인할 수 있습니다.
+                                </div>
+                                <ul class="global_list">
+                                    <li class="list_item">
+                                        <!-- 버튼 활성화시 ignore 클래스 삭제필요 -->
+                                        <a href="#bookmark" class="ignore">튜토리얼 보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 주변 탐색-->
+                            <div class="my_map_content exploration" id="exploration">
+                                <div class="section_txt mobile_con">
+                                    편의점, ATM, 약국 등 가까운
+                                    주변정보를 한 번에 탐색하고,
+                                    최근 오픈, TV출연 맛집 등 주변 인기
+                                    장소를 추천 키워드로 쉽게 찾아볼 수
+                                    있습니다. 자주 찾는 항목들은
+                                    주변 탐색바에 저장하여 더 빠르게
+                                    사용해 보세요.
+                                </div>
+                                <div class="section_txt pad_con">
+                                    편의점, ATM, 약국 등 가까운 주변정보를 한 번에 탐색하고,<br>
+                                    최근 오픈, TV출연 맛집 등 주변 인기 장소를 추천 키워드로 쉽게<br>
+                                    찾아볼 수 있습니다. 자주 찾는 항목들은 주변 탐색바에 저장하여<br>
+                                    더 빠르게 사용해 보세요.
+                                </div>
+                                <ul class="global_list">
+                                    <li class="list_item">
+                                        <a href="#exploration" class="_player" data-id="PYbaBXAuxXM">튜토리얼 보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section public_transit">
+                    <div class="section_inner">
+                        <strong class="highlight_title">대중교통/내비게이션</strong>
+                        <div class="mobile_con">
+                            <h3 class="section_title">
+                                이동 상황을<br>
+                                더 잘 이해하는 길찾기
+                            </h3>
+                            <p class="section_txt">
+                                출발 시간/날짜 설정에 따른 소요 시간
+                                예측과 심야버스를 포함한 최적화된 길찾기
+                                정보를 제공합니다.
+                            </p>
+                            <p class="section_txt padding_top_none">
+                                불필요한 정보를 줄이고, 주행환경에
+                                최적화된 내비게이션은 자체
+                                교통정보센터를 통해 실시간 도로 정보를
+                                빠르고 정확하게 제공합니다.
+                            </p>
+                        </div>
+                        <div class="pad_con">
+                            <h3 class="section_title">
+                                이동 상황을<br>
+                                더 잘 이해하는 길찾기
+                            </h3>
+                            <p class="section_txt first_section_txt">
+                                출발 시간/날짜 설정에 따른 소요 시간
+                                예측과 심야버스를 포함한 최적화된<br>길찾기
+                                정보를 제공합니다.
+                            </p>
+                            <p class="section_txt">
+                                불필요한 정보를 줄이고, 주행환경에
+                                최적화된 내비게이션은 자체<br>
+                                교통정보센터를 통해 실시간 도로 정보를
+                                빠르고 정확하게 제공합니다.
+                            </p>
+                        </div>
+                        <div class="img_area">
+                            <div class="public_transit_bg">
+                                <div class="img_public_transit"></div>
+                                <div class="img_public_transit2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section street_view">
+                    <div class="section_inner">
+                        <div class="street_view_con">
+                            <div class="mobile_con">
+                                <h3 class="section_title">
+                                    끊김없이 빠른
+                                    <br>
+                                    파노라마
+                                </h3>
+                                <p class="section_txt">
+                                    거리뷰와 항공뷰를 파노라마로 통합하고<br>
+                                    사용 속도를 높여 끊김없이 탐색할 수
+                                    있습니다.
+                                </p>
+                            </div>
+                            <div class="pad_con">
+                                <h3 class="section_title">
+                                    끊김없이 빠른 파노라마
+                                </h3>
+                                <p class="section_txt">
+                                    거리뷰와 항공뷰를 파노라마로 통합하고<br>
+                                    사용 속도를 높여 끊김없이 탐색할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 파노라마 영역 -->
+                    <div class="panorama_area">
+                        <img src="img/img_street_view.jpg" alt="">
+                    </div>
+                    <!-- // 파노라마 영역 -->
+                </div>
+
+                <div class="section use_tip">
+                    <div class="section_inner">
+                        <strong class="highlight_title">사용 팁</strong>
+                        <p class="section_txt">
+                            #네이버지도
+                        </p>
+                        <ul class="global_list tip_list">
+                            <li class="list_item time_setting">
+                                <a href="#">
+                                    <h4 class="tip_title">
+                                        출발 전<br>
+                                        심야버스<br>
+                                        미리<br>
+                                        확인하기
+                                    </h4>
+                                    <span class="tip_info_txt">출발 시간 설정</span>
+                                </a>
+                            </li>
+                            <li class="list_item search">
+                                <a href="#">
+                                    <h4 class="tip_title">
+                                        지도에서<br>
+                                        추천 카페만<br>
+                                        한 번에<br>
+                                        보기
+                                    </h4>
+                                    <span class="tip_info_txt">주변탐색</span>
+                                </a>
+                            </li>
+                            <!-- [D] 활성화 on / 비활성화 off 클래스 -->
+                            <li class="list_item bookmark off">
+                                <a href="#">
+                                    <h4 class="tip_title">
+                                        나만의<br>
+                                        맛집 지도<br>
+                                        힙플 지도<br>
+                                        만들기
+                                    </h4>
+                                    <strong>
+                                        Coming Soon
+                                    </strong>
+                                    <span class="tip_info_txt">즐겨찾기</span>
+                                </a>
+                            </li>
+                            <li class="list_item more_tip">
+                                <a href="#">
+                                    <h4 class="tip_title">
+                                        더 많은<br>
+                                        지도 팁들
+                                    </h4>
+                                    <span class="spr tip_info_txt">
+                                        <span class="blind">+</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section map_service">
+                    <div class="section_inner">
+                        <ul class="global_list">
+                            <li class="list_item">
+                                <a href="https://blog.naver.com/naver_map" target="_blank">
+                                    <dl class="map_service_box">
+                                        <dt>
+                                            매일 더 좋아지는 네이버 지도
+                                        </dt>
+                                        <dd>
+                                            블로그
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="http://blog.naver.com/PostList.nhn?blogId=naver_map&categoryNo=41&skinType=&skinId=&from=menu&userSelectMenu=true" target="_blank">
+                                    <dl class="map_service_box">
+                                        <dt>
+                                            재미와 정보 가득 이벤트
+                                        </dt>
+                                        <dd>
+                                            이벤트
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="https://blog.naver.com/naver_map/221192747140" target="_blank">
+                                    <dl class="map_service_box">
+                                        <dt>
+                                            다국어 지도, 영문 내비게이션 지원
+                                        </dt>
+                                        <dd>
+                                            서비스 소식
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="https://blog.naver.com/naver_map/221192748195?proxyReferer=http%3A%2F%2Fqa.hivelab.co.kr%3A4000%2Fnaverlabs%2Fmap_service%2Fpc%2Findex.html" target="_blank">
+                                    <dl class="map_service_box">
+                                        <dt>
+                                            평창 경기장 가는 가장 쉬운 길
+                                        </dt>
+                                        <dd>
+                                            평창 올림픽 가이드
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //content -->
+        </div>
+
+        <!-- footer -->
+        <div class="footer" id="footer">
+            <div class="footer_inner">
+                <p class="copyright">
+                    © Naver Corp. All rights reserverd.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- [D] 영상 레이어 팝업 영역 -->
+    <div class="layer_pop_movie _playerLayer" style="display:none">
+        <!-- 영상 영역 -->
+        <div class="movie">
+            <iframe id="popup-youtube-player" width="640" height="360" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+            <button type="button" class="btn_close _close_player"><span class="blind">창닫기</span></button>
+        </div>
+        <!-- // 영상 영역 -->
+    </div>
+    <!-- [D] // 영상 레이어 팝업 영역 -->
+</body>
+</html>

@@ -1,8 +1,9 @@
+.idea
 node_modules/
+src/
+.gitlab-ci.yml
 gulpfile.js
+index.html
 package-lock.json
 package.json
-src/
 robots.txt
-index.html
-.idea
