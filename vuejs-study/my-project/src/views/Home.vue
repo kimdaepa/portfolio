@@ -7,9 +7,12 @@
       <BaseBannerButton :class="$style.button" color-type="white_outline">Right Button</BaseBannerButton>
     </BaseBanner>
     <div :class="$style.section">
-      <BaseList :lists="cardlist"></BaseList>
+      <BaseList :lists="cardlist" />
     </div>
     <BaseTab :lists="tabborder" type="tab_border"></BaseTab>
+    <div :class="$style.section">
+      <BaseList :lists="cardlist" postType />
+    </div>
   </BaseLayout>
 </template>
 
