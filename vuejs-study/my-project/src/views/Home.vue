@@ -9,8 +9,8 @@
     <div :class="$style.section">
       <BaseList :lists="cardlist" />
     </div>
-    <BaseTab :lists="tabborder" type="tab_border"></BaseTab>
     <div :class="$style.section">
+      <BaseTab :lists="tabborder" type="tab_border"></BaseTab>
       <BaseList :lists="cardlist2" postType />
     </div>
   </BaseLayout>
