@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React Sample</title>
+    <style>
+      body{
+        padding:50px;
+        background-color:#66ccff;
+        font-family: sans-serif;
+      }
+
+      .area_input input{
+        padding:10px;
+        font-size:16px;
+        border:2px solid #fff;
+      }
+
+      .area_input button{
+          padding:10px;
+          font-size:16px;
+          margin:10px;
+          background-color: #0066ff;
+          color: #fff;
+          border: 2px solid #0066ff;
+      }
+
+      .area_input button:hover{
+          background-color: #003399;
+          border: 2px solid #003399; 
+          cursor:pointer;
+      }
+
+      .item_todo{
+          color:#333;
+          background-color: rgba(255,255,255, .5);
+          padding:15px;
+          margin-bottom: 15px;
+          border-radius: 5px;
+      }
+
+      .list_todo{
+          list-style:none;
+          padding-left:0;
+          width:500px;
+      }
+
+    </style>
+</head>
+<body> 
+    <div id="root">
+        <div>
+            <form>
+                <div class="area_input">
+                  <input placeholder="enter task">
+                  <button type="submit">add</button>
+               </div>
+              </form>
+              
+              <ul class="list_todo">
+                <li class="item_todo">테스트 테스트 테스트 테스트 테스트 테스트 테스트</li>
+                <li class="item_todo">테스트 테스트 테스트 테스트 테스트 테스트 테스트</li>
+                <li class="item_todo">테스트 테스트 테스트 테스트 테스트 테스트 테스트</li>
+              </ul>    
+        </div>
+    </div>
+</body>
+</html>
+

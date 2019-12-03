@@ -1,0 +1,20 @@
+.area_input input{
+    padding:10px;
+    font-size:16px;
+    border:2px solid #fff;
+}
+
+.area_input button{
+    padding:10px;
+    font-size:16px;
+    margin:10px;
+    background-color: #0066ff;
+    color: #fff;
+    border: 2px solid #0066ff;
+}
+
+.area_input button:hover{
+    background-color: #003399;
+    border: 2px solid #003399; 
+    cursor:pointer;
+}
