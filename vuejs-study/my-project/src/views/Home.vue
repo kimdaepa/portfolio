@@ -6,6 +6,9 @@
       <BaseBannerButton :class="$style.button">Left Button</BaseBannerButton>
       <BaseBannerButton :class="$style.button" color-type="white_outline">Right Button</BaseBannerButton>
     </BaseBanner>
+    <div :class="$style.section">
+      <BaseList :lists="cardlist"></BaseList>
+    </div>
     <BaseTab :lists="tabborder" type="tab_border"></BaseTab>
   </BaseLayout>
 </template>
@@ -16,6 +19,7 @@ import BaseLayout from '@/components/base-layout.vue'
 import BaseBanner from '@/components/base-banner.vue'
 import BaseBannerButton from '@/components/base-banner-button.vue'
 import BaseTab from '@/components/base-tab.vue'
+import BaseList from '@/components/base-list.vue'
 
 // tab border 필요한 데이터 값 배열
 const tabborder = [
@@ -33,18 +37,59 @@ const tabborder = [
   }
 ]
 
+const cardlist = [
+  {
+    href: '/list1',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p1.jpg'
+  },
+  {
+    href: '/list2',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p2.jpg'
+  },
+  {
+    href: '/list3',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p3.jpg'
+  },
+  {
+    href: '/list4',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p4.jpg'
+  },
+  {
+    href: '/list5',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p5.jpg'
+  },
+  {
+    href: '/list6',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p6.jpg'
+  }
+]
+
 export default {
   name: 'home',
   components: {
     BaseLayout,
     BaseBanner,
     BaseBannerButton,
-    BaseTab
+    BaseTab,
+    BaseList
   },
   // gnb 배열을 사용하겠다고 선언하자
   data () {
     return {
-      tabborder
+      tabborder,
+      cardlist
     }
   }
 }
@@ -53,5 +98,11 @@ export default {
 <style module lang="scss">
 .button + .button {
   margin-left: 5px;
+}
+
+.section {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 30px 0 20px;
 }
 </style>
