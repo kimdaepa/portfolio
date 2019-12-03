@@ -11,7 +11,7 @@
     </div>
     <BaseTab :lists="tabborder" type="tab_border"></BaseTab>
     <div :class="$style.section">
-      <BaseList :lists="cardlist" postType />
+      <BaseList :lists="cardlist2" postType />
     </div>
   </BaseLayout>
 </template>
@@ -79,6 +79,57 @@ const cardlist = [
   }
 ]
 
+const cardlist2 = [
+  {
+    href: '/list1',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p1.jpg',
+    date: '2019.11.13',
+    comment: '1234'
+  },
+  {
+    href: '/list2',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p2.jpg',
+    date: '2019.11.13',
+    comment: '1234'
+  },
+  {
+    href: '/list3',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p3.jpg',
+    date: '2019.11.13',
+    comment: '1234'
+  },
+  {
+    href: '/list4',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p4.jpg',
+    date: '2019.11.13',
+    comment: '1234'
+  },
+  {
+    href: '/list5',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p5.jpg',
+    date: '2019.11.13',
+    comment: '1234'
+  },
+  {
+    href: '/list6',
+    listtitle: '리스트 타이틀',
+    listdescription: '리스트 설명을 나타냅니다.',
+    listimg: 'p6.jpg',
+    date: '2019.11.13',
+    comment: '1234'
+  }
+]
+
 export default {
   name: 'home',
   components: {
@@ -92,7 +143,8 @@ export default {
   data () {
     return {
       tabborder,
-      cardlist
+      cardlist,
+      cardlist2
     }
   }
 }
