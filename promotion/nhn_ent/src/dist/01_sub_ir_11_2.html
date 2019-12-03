@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#datepicker" ).datepicker();
+	} );
+	</script>
+</head>
+<body class="popup" style="width:800px">
+<div id="wrap" class="wrap">
+	<header class="popup_header" role="banner">
+		<h1 class="pop_tit">IR Meeting 신청</h1>
+	</header>
+	<div class="popup_content ir_pop_content" role="main">
+		<form id="subForm" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>신청 정보</legend>
+				<div class="form_section">
+					<h2 class="pop_tit">신청인 정보</h2>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner"  style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title on">날짜</strong>
+								<div class="search_date">
+									<!-- [D] 활성화 on 추가 -->
+									<span class="input_datepicker on">
+										<label for="date" class="blind">날짜</label>
+										<input type="text" class="input_txt input_date" value="2018.11.13" placeholder="날짜" readonly="">
+										<button type="button" class="btn_cal" id="datepicker" ><span class="sp_ico ico_cal"><span class="blind">달력 열기</span></span></button>
+									</span>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title on">시간</strong>
+								<!-- [D] 활성화 on 추가 -->
+								<div class="select_box select">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">12:00</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">미팅유형 (대분류)</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">미팅유형 (대분류)</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">미팅유형 (소분류)</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">미팅유형 (소분류)</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">회사</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="회사">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:154px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">총 참석인원</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="제안자명">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">이름</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="이름">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">직장</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="직장">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 opn 추가 -->
+								<strong class="cell_title">이메일</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="이메일">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:154px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">연락처</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="연락처">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>기관 정보</legend>
+				<div class="form_section">
+					<h2 class="pop_tit">기관 정보</h2>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:100%">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">소속회사/기관</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="소속회사/기관">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title on">국가</strong>
+								<div class="select_box select">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">대한민국</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">대한민국</a></li>
+											<li><a href="#">일본</a></li>
+											<li><a href="#">러시아</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">도시</strong>
+								<div class="select_box on">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">도시</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">서울</a></li>
+											<li><a href="#">대전</a></li>
+											<li><a href="#">대구</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">기관유형</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">기관유형</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">투자성향</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">투자성향</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">Turnover</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">Turnover</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:152px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">주주여부</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">주주여부</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:335px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">주식보유수</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">주식보유수</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner" style="width:335px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">운용규모 (mn USD)</strong>
+								<div class="select_box">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">운용규모 (mn USD)</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">00:00</a></li>
+											<li><a href="#">00:30</a></li>
+											<li><a href="#">01:00</a></li>
+											<li><a href="#">01:30</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>동행인 정보</legend>
+				<div class="form_section">
+					<h2 class="pop_tit">
+						동행인 정보
+						<div class="chk_area" style="display:inline-block;">
+							<!--[D] 체크시 클래스 on 추가-->
+							<span class="input_chk on">
+								<input type="checkbox" id="check2" name="check2">
+								<label id="lbl_chk_2" for="check2" class="lbl">
+									<span class="sp_ir ico_chk"></span>
+									신청인 정보와 동일시 체크해주세요. 2명 이상일 경우, 추가/삭제 버튼을 클릭하여 작성해주세요.
+								</label>
+							</span>
+						</div>
+					</h2>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">이름</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="이름">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">직급</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="직급">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">이메일</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="이메일">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">연락처</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="연락처">
+								</div>
+							</div>
+							<!--[D] 활성화 on 추가 -->
+							<div class="cell_inner btn_area">
+								<!--[D] 활성화 on 추가 -->
+								<button type="button" class="sp_ico btn_add on">
+									<span class="blind">동행인 추가</span>
+								</button>
+								<!--[D] 활성화 on 추가 -->
+								<button type="button" class="sp_ico btn_del">
+									<span class="blind">동행인 삭제</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">이름</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="이름">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">직급</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="직급">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">이메일</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="이메일">
+								</div>
+							</div>
+							<div class="cell_inner" style="width:140px">
+								<!-- [D] 활성화 on 추가 -->
+								<strong class="cell_title">연락처</strong>
+								<div class="input_box qua">
+									<input type="text" id="" name="" value="" placeholder="연락처">
+								</div>
+							</div>
+							<!--[D] 활성화 on 추가 -->
+							<div class="cell_inner btn_area on">
+								<!--[D] 활성화 on 추가 -->
+								<button type="button" class="sp_ico btn_add on">
+									<span class="blind">동행인 추가</span>
+								</button>
+								<!--[D] 동행인 2명 이상시 red 추가 -->
+								<button type="button" class="sp_ico btn_del red">
+									<span class="blind">동행인 삭제</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="popup_footer">
+		<div class="btn_foot_area">
+			<button type="submit" class="btn btn_invert btn_s">확인</button>
+			<button type="button" class="btn btn_s style_b4b4b4">취소</button>
+		</div>
+	</div>
+</div>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 241px; left: 50px; z-index: 1; display:block;">
+	<div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">
+		<a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev">
+			<span class="ui-icon ui-icon-caret-1-w">Prev</span>
+		</a>
+		<a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next">
+			<span class="ui-icon ui-icon-caret-1-e">Next</span>
+		</a>
+		<div class="ui-datepicker-title">
+			<span class="ui-datepicker-year">2018</span>&nbsp;<span class="ui-datepicker-month">04</span>
+		</div>
+	</div>
+	<table class="ui-datepicker-calendar">
+		<thead>
+			<tr>
+				<th scope="col" class="ui-datepicker-week-end"><span title="Sunday">S</span></th>
+				<th scope="col"><span title="Monday">M</span></th>
+				<th scope="col"><span title="Tuesday">T</span></th>
+				<th scope="col"><span title="Wednesday">W</span></th>
+				<th scope="col"><span title="Thursday">T</span></th>
+				<th scope="col"><span title="Friday">F</span></th>
+				<th scope="col" class="ui-datepicker-week-end"><span title="Saturday">S</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+				<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+				<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+				<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+				<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">1</a></td>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">2</a></td>
+			</tr>
+			<tr>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">3</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">4</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">5</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">6</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">7</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">8</a></td>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">9</a></td>
+			</tr>
+			<tr>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">10</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">11</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">12</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">13</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">14</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">15</a></td>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">16</a></td>
+			</tr>
+			<tr>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">17</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">18</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">19</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">20</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">21</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">22</a></td>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">23</a></td>
+			</tr>
+			<tr>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">24</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">25</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">26</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">27</a></td>
+				<td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">28</a></td>
+				<td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default ui-state-highlight ui-state-active" href="#">29</a></td>
+				<td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2018"><a class="ui-state-default" href="#">30</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

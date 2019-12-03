@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0">
+<title>RWBY : Amity Arena</title>
+<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<!-- [D] intro 노출시 intro_active 추가 -->
+<div class="wrap">
+	<!-- header -->
+	<h1 class="logo">
+		<a href="#">
+			<span class="blind">RWBY AMITY ARENA</span>
+		</a>
+	</h1>
+	<div class="header">
+		<button type="button" class="sp_ico btn menu">
+			<span class="blind">menu open</span>
+		</button>
+		<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+		<div class="layer_pop menu">
+			<div class="logo">
+				<a href="#">
+					<span class="blind">RWBY AMITY ARENA</span>
+				</a>
+			</div>
+			<div class="ly_wrap">
+				<strong class="blind">menu layer popup</strong>
+				<ul class="list">
+					<li><a href="#">Game Intro</a></li>
+					<li><a href="#">Newsletter</a></li>
+					<li><a href="#">Influencer Program</a></li>
+				</ul>
+			</div>
+			<dl class="menu_share">
+				<dt class="blind">Share</dt>
+				<dd>
+					<ul class="share_list">
+						<li class="instagram"><button type="button" class="sp_ico_after"><span class="blind">instagram</span></button></li>
+						<li class="twitter"><button type="button" class="sp_ico_after"><span class="blind">twitter</span></button></li>
+						<li class="facebook"><button type="button" class="sp_ico_after"><span class="blind">facebook</span></button></li>
+						<li class="youtube"><button type="button" class="sp_ico_after"><span class="blind">youtube</span></button></li>
+					</ul>
+				</dd>
+			</dl>
+			<button type="button" class="sp_ico btn_top_close">
+				<span class="blind">menu close</span>
+			</button>
+		</div>
+		<button type="button" class="sp_ico btn share">
+			<span class="blind">menu open</span>
+		</button>
+		<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+		<div class="layer_pop share">
+			<div class="ly_wrap">
+				<strong class="blind">share layer popup</strong>
+				<dl>
+					<dt class="share_title">Share</dt>
+					<dd>
+						<ul class="share_list">
+							<li class="instagram"><button type="button" class="sp_ico_after"><span class="blind">instagram</span></button></li>
+							<li class="twitter"><button type="button" class="sp_ico_after"><span class="blind">twitter</span></button></li>
+							<li class="facebook"><button type="button" class="sp_ico_after"><span class="blind">facebook</span></button></li>
+							<li class="youtube"><button type="button" class="sp_ico_after"><span class="blind">youtube</span></button></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<button type="button" class="sp_ico btn_bottom_close">
+				<span class="blind">share close</span>
+			</button>
+		</div>
+	</div>
+	<!-- // header -->
+	<div class="container">
+		<!-- [D] tab 노출시 클래스 game_intro 추가 -->
+		<div class="content">
+			<!-- intro -->
+			<div class="intro_wrap">
+				<h2 class="blind">RWBY intro</h2>
+				<div class="bg_area slide_active">
+					<div class="bg_box box1">
+						<div class="bg_char1"></div>
+					</div>
+					<div class="bg_box box2">
+						<div class="bg_char2"></div>
+					</div>
+					<div class="bg_box box3">
+						<div class="bg_char3"></div>
+					</div>
+					<div class="bg_box box4">
+						<div class="bg_char4"></div>
+					</div>
+				</div>
+				<button tyle="button" class="sp_ico btn_play">
+					<span class="blind">open movie player layer popup</span>
+				</button>
+				<button tyle="button" class="sp_ico btn_scroll">
+					<!-- [D] 스크롤 아이콘 동작 translateY 값 조정 -->
+					<span class="sp_ico arrow" style="transform: translateY(0px);">Scroll to the next page</span>
+				</button>
+				<!-- lypop -->
+				<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+				<div class="layer_pop movie">
+					<div class="ly_wrap">
+						<iframe src="https://www.youtube.com/embed/pYW2GmHB5xs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<button type="button" class="sp_ico btn_bottom_close"><span class="blind">movie layer popup close</span></button>
+				</div>
+			</div>
+			<!-- //intro -->
+			<!-- tab -->
+			<div class="tab_area">
+				<ul>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Arena</a>
+					</li>
+				</ul>
+				<!-- [D] 탭 선택시 0~50% 값 변경 / about= left:0 , arena = left: 50% -->
+				<span class="bar" style="left: 0"></span>
+			</div>
+			<!-- //tab -->
+
+			<!-- about -->
+			<div class="section about" style="display:none;">
+				<h2 class="blind">RWBY about</h2>
+				<p class="text">
+					Command RWBY Characters<br>
+					in a Real time Strategic Duel!<br>
+					Play the new mobile game on your<br>
+					phone, tablet, or scroll!
+				</p>
+			</div>
+			<!-- //about -->
+
+			<!-- Arena -->
+			<div class="section arena" style="display:none;">
+				<h2 class="blind">RWBY arena</h2>
+				<div class="arena_wrap">
+					<p class="text">
+						Several biomes to fight in.<br>
+						Explore the arenas across Remnant!
+					</p>
+					<!-- [d] 아레나 이동 style margin-left: 값 수정 -->
+					<ul style="width: 900%;margin-left:0">
+						<li class="arena_item1"></li>
+						<li class="arena_item2"></li>
+						<li class="arena_item3"></li>
+						<li class="arena_item4"></li>
+						<li class="arena_item5"></li>
+						<li class="arena_item6"></li>
+						<li class="arena_item7"></li>
+						<li class="arena_item8"></li>
+						<li class="arena_item9"></li>
+					</ul>
+				</div>
+				<div class="page_area">
+					<button type="button" class="sp_ico_after prev">
+						<span class="blind">previously arena</span>
+					</button>
+					<div class="thum_area">
+						<!-- [d] 썸네일 이동 style margin-left: 값 수정 -->
+						<ul style="margin-left: 0px">
+							<!-- [D] 선택 아레나 클래스 active 추가 -->
+							<li class="arena_thum1 active"><a href="#"><strong>Arena 1</strong></a></li>
+							<li class="arena_thum2"><a href="#"><strong>Arena 2</strong></a></li>
+							<li class="arena_thum3"><a href="#"><strong>Arena 3</strong></a></li>
+							<li class="arena_thum4"><a href="#"><strong>Arena 4</strong></a></li>
+							<li class="arena_thum5"><a href="#"><strong>Arena 5</strong></a></li>
+							<li class="arena_thum6"><a href="#"><strong>Arena 6</strong></a></li>
+							<li class="arena_thum7"><a href="#"><strong>Arena 7</strong></a></li>
+							<li class="arena_thum8"><a href="#"><strong>Arena 8</strong></a></li>
+							<li class="arena_thum9"><a href="#"><strong>arena 9</strong></a></li>
+						</ul>
+					</div>
+					<button type="button" class="sp_ico_after next">
+						<span class="blind">next arena</span>
+					</button>
+				</div>
+			</div>
+			<!-- //Arena -->
+
+			<!-- news letter -->
+			<div class="section news" style="display:none;">
+				<h2 class="title">
+					Sign Up for our<br>
+					Newsletter!
+				</h2>
+				<p class="text">
+					Our newsletter gives you exclusive info for<br>
+					RWBY: Amity Arena like pre-registration<br>
+					alerts, Closed Beta Test opportunities,<br>
+					and special promotions!
+				</p>
+				<div class="sp_ico_after input_info">
+					<label for="input_addr" class="blind">enter your e-mail address</label>
+					<input type="text" placeholder="Enter your e-mail address">
+				</div>
+				<button type="button" class="btn_red">SUBSCRIBE</button>
+				<p class="notice">
+						By clicking SUBSCRIBE, you are indicating that you have read and agree to the <a href="">Privacy Policy.</a>
+				</p>
+				<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+				<div class="layer_pop subscribe">
+					<div class="ly_wrap">
+						<p>
+							You’re now subscribed to the<br>
+							RWBY: Amity Arena newsletter!
+						</p>
+						<button type="button" class="btn_red great">GREAT!</button>
+						<span class="sp_ico bolt_lt"></span>
+						<span class="sp_ico bolt_rt"></span>
+						<span class="sp_ico bolt_lb"></span>
+						<span class="sp_ico bolt_rb"></span>
+					</div>
+				</div>
+				<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+				<div class="layer_pop subscribe">
+					<div class="ly_wrap ok">
+						<p>
+							Please enter a valid email address.
+						</p>
+						<button type="button" class="btn_red great">OK</button>
+						<span class="sp_ico bolt_lt"></span>
+						<span class="sp_ico bolt_rt"></span>
+						<span class="sp_ico bolt_lb"></span>
+						<span class="sp_ico bolt_rb"></span>
+					</div>
+				</div>
+			</div>
+			<!-- //news letter -->
+
+			<!--Influencer program-->
+			<div class="section influencer" style="display:block">
+				<div class="section_inner">
+					<h2 class="title">Influencer Program</h2>
+					<div class="inner_box">
+						<ul class="list">
+							<li class="item">
+								<a href="#" class="sp_ico_before sp_ico_after">
+									<span>What is this?</span>
+								</a>
+							</li>
+							<li class="item exclamation">
+								<a href="#" class="sp_ico_before sp_ico_after">
+									<span>
+										Where can I get some<br>
+										more information?
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="btn_red">APPLY</button>
+				</div>
+				<div class="footer">
+					<ul class="service_list">
+						<li class="sp_ico nhn">
+							<a href="#"><span class="blind">NHN ENTERTAINMENT</span></a>
+						</li>
+						<li class="sp_ico rooster">
+							<a href="#"><span class="blind">ROOSTER TEETH</span></a>
+						</li>
+						<li class="sp_ico baobao">
+							<a href="#"><span class="blind">baobao net</span></a>
+						</li>
+					</ul>
+					<p class="privacy"><a href="#">Privacy Policy</a></p>
+					<p class="corp">© NHN Entertainment Corp. &amp; BAOBABNET Corp.</p>
+					<p class="corp">© 2004 - 2018 Rooster Teeth Productions, LLC.</p>
+				</div>
+				<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+				<div class="layer_pop ly_notice active">
+					<div class="ly_wrap">
+						<h3 class="pop_title">
+							What is this?
+						</h3>
+						<p class="pop_text">
+							Our influencer program is separated <br>
+							into tiers based on how you want to <br>
+							contribute, so reach out to us for <br>
+							more information. We want to make <br>
+							sure that  we’re providing you the <br>
+							tools you need to make your content, <br>
+							so let’s chat about what you want to <br>
+							do! Click on the Apply button below to <br>
+							get in touch with us!
+						</p>
+					</div>
+					<button type="button" class="sp_ico btn_bottom_close"><span class="blind">Privacy Policy layer popup close</span></button>
+				</div>
+				<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+				<div class="layer_pop ly_notice">
+					<div class="ly_wrap">
+						<h3 class="pop_title">
+							Where can I get some<VR>
+							more information?
+						</h3>
+						<p class="pop_text">
+							When we launch the game, we’d love <br>
+							to have interested fans talk about <br>
+							RWBY: Amity Arena.  Share your tips <br>
+							and strategies, alert your friends and <br>
+							fans about game updates, or just <br>
+							create some funny videos about the <br>
+							game. Anything you decide to do, <br>
+							we want to know about it!
+						</p>
+					</div>
+					<button type="button" class="sp_ico btn_bottom_close"><span class="blind">Privacy Policy layer popup close</span></button>
+				</div>
+			</div>
+			<!--//Influencer program-->
+		</div>
+	</div>
+</div>
+<!-- Privacy Policy -->
+<!-- [D] 레이어 팝업 노출시 layer_pop 클래스에 active 추가적용 필요 -->
+<div class="layer_pop ly_notice">
+	<div class="ly_wrap">
+		<h3 class="pop_title">
+			Privacy Policy
+		</h3>
+		<ul class="pop_text">
+			<li>
+				1. Purpose of collection and use: sending <br>
+				newsletters of “RWBY: Amity Arena” and <br>
+				providing customer service regarding <br>
+				issues related to the said event.
+			</li>
+			<li>
+				2. Items to be collected and used: <br>
+				user email address.
+			</li>
+			<li>
+				3. Period of retention and use of personal <br>
+				information: Personal information is retained until <br>
+				user expresses its intent to terminate <br>
+				subscription and destroyed upon receipt of such <br>
+				intent to terminate guidelines on termination of <br>
+				subscription are separately <br>
+				provided via newsletter email.
+			</li>
+		</ul>
+	</div>
+	<button type="button" class="sp_ico btn_bottom_close"><span class="blind">Privacy Policy layer popup close</span></button>
+</div>
+<!-- //Privacy Policy -->
+</body>
+</html>

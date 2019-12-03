@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="sub_page">
+<!-- [D] 스킵 네비게이션 -->
+<div id="u_skip" class="u_skip">
+	<a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>네이게이션으로 바로가기</span></a>
+	<a href="#content" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<div class="ne_header_inner_con">
+				<h1 class="nhnent"><a href="#" class="nhnent_link"><span class="blind">NHN Entertainment</span></a></h1>
+				<nav id="nav" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<li class="nav_item on"><a href="#" class="nav_link">NHN Ent.</a></li>
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">Service</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">PR</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR</a></li>
+						<li class="nav_item nav_recruit"><a href="#" class="nav_link">Recruit</a></li>
+						<li class="nav_item nav_locale on"><a href="#" class="nav_link">KR</a></li>
+						<li class="nav_item nav_locale"><a href="#" class="nav_link">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="ne_header_inner_con_over">
+				<nav id="nav2" class="ne_global_nav" role="navigation">
+					<!-- [D] 우측 기준일 경우 right_nav_lst 클래스 추가 -->
+					<ul class="global_nav_lst right_nav_lst">
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">기업지배구조</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">공시정보</a></li>
+						<li class="nav_item on"><a href="#" class="nav_link">주가정보</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">재무재표</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR일정</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR자료실</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">일반공고</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<main id="container" class="sub" role="main">
+		<section class="section sub_ir">
+			<div class="tit_box">
+				<h2 class="section_tit">주가정보</h2>
+				<div class="content_nav">
+				    <ul class="content_nav_lst">
+					    <li class="content_nav_item on">
+							<a href="#"><span>실시간 주가</span></a>
+						</li>
+					    <li class="content_nav_item">
+							<a href="#"><span>일별 시세</span></a>
+						</li>
+				    </ul>
+				</div>
+			</div>
+			<div class="ir_article">
+	            <h3 class="blind">실시간 주가</h3>
+	            <dl class="rt_stock">
+					<!-- [D] 상승/하락 이미지 up / down 클래스로 제어 -->
+		            <dt class="blind">현재가</dt>
+                    <dd class="rt_stock_stat down"><span class="sp_ico_after ico_ud_big"><span class="blind">주가 상승/하락</span></span>66,200</dd>
+                    <dt class="price_tit">전일대비</dt>
+                    <dd class="price_change down"><span class="sp_ico_after ico_ud"><span class="blind">전일대비 상승/하락</span></span> 2,200</dd>
+                    <dt class="price_tit">등락률</dt>
+                    <dd class="price_change down">- 3.44%</dd>
+	            </dl>
+	            <div class="tbl_wrap">
+	                <table class="tbl">
+	                <caption><span class="blind">실시간 주가 요약</span></caption>
+	                <colgroup>
+		                <col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+		                <col>
+	                </colgroup>
+	                <thead>
+		                <tr>
+			                <th scope="col">시가(원)</th>
+			                <th scope="col">고가(원)</th>
+			                <th scope="col">저가(원)</th>
+			                <th scope="col">거래량(원)</th>
+		                </tr>
+	                </thead>
+	                <tbody>
+		                <tr>
+							<td><strong class="stock_info">63,200</strong></td>
+							<td><strong class="stock_info">62,200</strong></td>
+							<td><strong class="stock_info">61,200</strong></td>
+							<td><strong class="stock_info">60,200</strong></td>
+		                </tr>
+	                </tbody>
+	                </table>
+	            </div>
+	            <div class="tbl_row">
+	                <div class="tbl_col">
+	                    <div class="tbl_wrap padding_border">
+	                        <table class="tbl" style="width:500px">
+		                        <caption><span class="blind">주가정보, 상장주식수 , 시가총액, 상장일 정보</span></caption>
+		                        <colgroup>
+			                        <col style="width:50%">
+									<col style="">
+		                        </colgroup>
+		                        <thead>
+			                        <tr>
+				                        <th colspan="2" scope="row">KOSPI / KOSPI 대형주 / 서비스업</th>
+			                        </tr>
+		                        </thead>
+		                        <tbody>
+									<tr>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														전일가(원)
+													</dt>
+													<dd class="align_right">
+														64,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														매도호가(원)
+													</dt>
+													<dd class="align_right">
+														61,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														전일거래량(주)
+													</dt>
+													<dd class="align_right">
+														178,310
+													</dd>
+												</dl>
+											</div>
+										</td>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														매수호가(원)
+													</dt>
+													<dd class="align_right">
+														64,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														상한가(원)
+													</dt>
+													<dd class="align_right">
+														81,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														52주최고(원)
+													</dt>
+													<dd class="align_right">
+														84,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														하한가(원)
+													</dt>
+													<dd class="align_right">
+														43,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														52주최저(원)
+													</dt>
+													<dd class="align_right">
+														61,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														액면가(원)
+													</dt>
+													<dd class="align_right">
+														500
+													</dd>
+												</dl>
+											</div>
+										</td>
+										<td>
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														PER
+													</dt>
+													<dd class="align_right">
+														94,000
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+		                        </tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2">
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														상장주식수(주)
+													</dt>
+													<dd class="align_right font_weight_n">
+														19,565,025
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+										<td colspan="2">
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														시가총액(백만원)
+													</dt>
+													<dd class="align_right font_weight_n">
+														19,565,025
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+										<td colspan="2">
+											<div class="row_content">
+												<dl>
+													<dt class="align_left">
+														상장일
+													</dt>
+													<dd class="align_right font_weight_n">
+														2013.08.29
+													</dd>
+												</dl>
+											</div>
+										</td>
+			                        </tr>
+								</tfoot>
+	                        </table>
+	                    </div>
+	                </div>
+	                <div class="tbl_col">
+						<div class="tbl_wrap padding_border stock_table">
+	                        <table class="tbl" style="width:500px">
+		                        <caption><span class="blind">호가 기준 매도잔량, 매수잔량 비교</span></caption>
+		                        <colgroup>
+			                        <col style="width:165px">
+			                        <col style="">
+			                        <col style="width:165px">
+		                        </colgroup>
+		                        <thead>
+			                        <tr>
+				                        <th scope="col" class="align_right">매도잔량</th>
+				                        <th scope="col" class="align_right">호가</th>
+				                        <th scope="col" class="align_right">매수잔량</th>
+			                        </tr>
+		                        </thead>
+		                        <tbody>
+			                        <tr>
+				                        <td class="align_right">
+											<div class="txt_color_blue">
+												752
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div class="txt_color_blue">
+												752
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div class="txt_color_blue">
+												752
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div class="txt_color_blue">
+												752
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div class="txt_color_blue">
+												752
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div>
+
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div class="txt_color_red">
+												4,043
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div>
+
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div class="txt_color_red">
+												4,043
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div>
+
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div class="txt_color_red">
+												4,043
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div>
+
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div class="txt_color_red">
+												4,043
+											</div>
+										</td>
+			                        </tr>
+									<tr>
+				                        <td class="align_right">
+											<div>
+
+											</div>
+										</td>
+										<td class="align_right">
+											<div>
+												62,000
+											</div>
+										</td>
+										<td class="align_right">
+											<div class="txt_color_red">
+												4,043
+											</div>
+										</td>
+			                        </tr>
+		                        </tbody>
+								<tfoot>
+									<tr>
+										<td class="align_right txt_color_blue">492</td>
+										<td class="align_right stock_td_txt">총잔량</td>
+										<td class="align_right txt_color_red">837</td>
+									</tr>
+								</tfoot>
+	                        </table>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+			<div class="tbl_wrap">
+				<table class="tbl padding_left_type tbl_rt_stock">
+	                <caption><span class="blind">주가정보 테이블</span></caption>
+	                <colgroup>
+		                <col style="width:200px">
+						<col style="width:180px">
+						<col style="width:180px">
+						<col style="width:180px">
+						<col style="width:80px">
+						<col style="">
+	                </colgroup>
+	                <thead>
+	                <tr>
+	                    <th scope="col" class="align_left">시간</th>
+	                    <th scope="col" class="align_left">체결가</th>
+	                    <th scope="col" class="align_left">전일대비</th>
+						<th scope="col" class="align_left">등락률</th>
+						<th scope="col" class="align_right">거래주(주)</th>
+						<th scope="col" class="align_right">거래대금(주)</th>
+	                </tr>
+	                </thead>
+	                <tbody>
+						<tr>
+							<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+							<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+							<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+							<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+							<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left down">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+						<tr>
+	                        <td class="align_left">1:30:25</td>
+							<td class="align_left">61,600</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								800
+							</td>
+							<td class="align_left up">
+								<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+								1.29
+							</td>
+							<td class="align_right">2</td>
+							<td class="align_right">61,600</td>
+	                    </tr>
+	                </tbody>
+	            </table>
+		    </div>
+			<div class="pagenav_wrap">
+				<ul class="lst_pagenav">
+					 <li class="pagenav"><a href="#" class="pagenav_prev"><span class="btn_page pre">이전</span></a></li>
+					<li class="pagenav on"><a href="#" class="btn_page">1</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">2</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">3</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">4</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">5</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">6</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">7</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">8</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">9</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">10</a></li>
+					<li class="pagenav"><a href="#" class="pagenav_next"><span class="btn_page next">다음</span></a></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!-- //container -->
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="legal_lst">
+				<li class="legal_item">
+					<a href="#" class="legal_link">제휴제안</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link">기업윤리상담센터</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link"><strong>개인정보 처리방침</strong></a>
+				</li>
+			</ul>
+			<ul class="sub_co_lst">
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Global Site</a></li>
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Family Site</a></li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="popup" style="width:800px">
+	<div id="wrap" class="wrap">
+	<header class="popup_header" role="banner">
+		<h1 class="pop_tit">제휴제안</h1>
+	</header>
+	<div class="popup_content" role="main">
+		<form id="subForm" method="post" enctype="multipart/form-data">
+			<fieldset>
+			<legend>제휴제안 내용</legend>
+				<div class="form_section">
+					<h2 class="pop_tit">제휴제안 내용</h2>
+					<div class="select_box">
+						<p class="style_select_box">
+							<!-- [D] sel_val의 텍스트 교체적용 필요(option 중 선택된 텍스트로 교체 필요) -->
+							<span class="sel_val">제휴구분</span><span class="default_item"></span>
+						</p>
+						<select id="prosite2" name="proposal.prosite2" class="sel">
+							<option value="">제휴구분</option>
+							<option value="MAKT">마케팅 제휴</option>
+							<option value="BIZ">사업제휴</option>
+							<option value="IVST">투자</option>
+							<option value="PUBL">퍼블리싱</option>
+							<option value="ETC">기타</option>
+						</select>
+					</div>
+					<div class="input_txt_wrap">
+						<!-- [D] input 활성화(커서 진입 시) 시 display:none, input 비활성화(커서 진출 시) 시 display:block -->
+						<p class="style_input_box" style="display:block">
+							<!-- [D] sel_val의 텍스트 교체적용 필요(input value 에 적용되는 텍스트로 교체 필요) -->
+							<span class="sel_val">제목</span><span class="default_item"></span>
+						</p>
+						<input type="text" id="" name="" value="">
+						<p class="required_txt"><span class="default_item"></span> 필수 기재 항목입니다.</p>
+					</div>
+					<!-- [D] 유효성 검사결과 오류확인 시 wrong 클래스 추가 필 -->
+					<div class="input_textarea">
+						<label for="in_textarea">제안배경<span class="default_item"></span></label>
+						<textarea id="in_textarea" name="" cols="20" rows="4" style="height:100px">안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요</textarea>
+					</div>
+					<!-- [D] 유효성 검사결과 오류확인 시 wrong 클래스 추가 필 -->
+					<div class="input_textarea wrong">
+						<label for="in_textarea2">제안내용<span class="default_item"></span></label>
+						<textarea id="in_textarea2" name="" cols="20" rows="4" style="height:100px"></textarea>
+					</div>
+					<!-- [D] 유효성 검사결과 오류확인 시 wrong 클래스 추가 필 -->
+					<div class="input_textarea">
+						<label for="in_textarea3">기대효과<span class="default_item"></span></label>
+						<textarea id="in_textarea3" name="" cols="20" rows="4" style="height:100px"></textarea>
+					</div>
+					<!-- [D] 첨부파일 첨부시 add_file 클래스 추가 필요 -->
+					<div class="input_file">
+						<label for="in_file">제안서 파일첨부</label>
+						<!-- [D] 첨부파일 첨부시 value에 파일명 추가 필요 -->
+						<input type="text" id="in_file" name="" value="제안서 파일첨부">
+						<span class="btn_file"><label for="filename" class="blind">첨부파일</label><input type="file" id="filename" name="" class="upload"></span>
+						<button type="button" class="btn_delete_file"><span class="blind">파일삭제</span></button>
+						<div class="upload_file_info">
+							문서파일 (pdf, doc, ppt, hwp, gul, txt, zip 등)만 가능합니다.<br>
+							20mb를 초과하면 접수되지 않습니다. 20mb를 초과할 경우, 제안내용에 다운로드 가능한 링크를 입력해주세요.
+						</div>
+					</div>
+					<div class="input_link">
+						<input type="text" id="" name="" value="" placeholder="게임설치 파일 다운로드 링크"><span class="ico_link"></span>
+						<div class="upload_link_info">
+							테스트가 가능한 게임 설치파일(apk, ipa)을 다운로드 할 수 있는 URL을 입력해주세요.
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+			<legend>제휴제안 내용</legend>
+				<div class="form_section">
+					<h2 class="pop_tit">제휴제안 업체정보</h2>
+					<div class="select_box qua">
+						<select id="prosite2" name="proposal.prosite2" class="sel2">
+							<option value="">제휴구분</option>
+							<option value="MAKT">마케팅 제휴</option>
+							<option value="BIZ">사업제휴</option>
+							<option value="IVST">투자</option>
+							<option value="PUBL">퍼블리싱</option>
+							<option value="ETC">기타</option>
+						</select>
+					</div>
+					<div class="input_box qua">
+						<input type="text" id="" name="" value="" placeholder="제안자명">
+					</div>
+					<div class="input_box qua">
+						<input type="text" id="" name="" value="" placeholder="이메일">
+					</div>
+					<div class="input_box qua">
+						<input type="text" id="" name="" value="" placeholder="연락처">
+					</div>
+					<!-- [D] 첨부파일 첨부시 add_file 클래스 추가 필요 -->
+					<div class="input_file">
+						<label for="in_file2">회사(기관) 소개서</label>
+						<!-- [D] 첨부파일 첨부시 value에 파일명 추가 필요 -->
+						<input type="text" id="in_file2" name="" value="회사(기관) 소개서">
+						<span class="btn_file"><label for="filename" class="blind">첨부파일</label><input type="file" id="filename" name="" class="upload"></span>
+						<button type="button" class="btn_delete_file"><span class="blind">파일삭제</span></button>
+						<div class="upload_file_info">
+							20mb를 초과하면 접수되지 않습니다.
+						</div>
+					</div>
+					<div class="input_link">
+						<input type="text" id="" name="" value="" placeholder="홈페이지 주소"><span class="ico_link"></span>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<div class="terms_wrap first">
+			<h3 class="terms_tit">게임 설치파일 다운로드 링크</h3>
+			<div class="terms_txt_wrap">
+				<p class="terms_txt">NHN엔터테인먼트㈜는 NHN엔터테인먼트 및 관계사 임직원의 불공정한 업무처리, 지위를 이용한 부당한 요구 등에 대한 상담 및<br>신고접수를 위해 아래와 같이 개인정보를 수집하고 있습니다. 단, 익명으로 작성하시는 분들께는 개인정보를 수집하지않고 있습니다.</p>
+				<ol class="terms_lst">
+				 <li>1. 수집 개인정보 항목 : (필수) 전화번호,이메일주소 (선택) 성명,비밀번호</li>
+				 <li>2. 개인정보의 수집 및 이용목적 : 처리결과 회신 등 원활한 의사소통 경로 확보 </li>
+				 <li>3. 개인정보의 이용기간 : 개인정보 수집 및 이용목적 달성 후, 해당 개인정보를 지체없이 파기합니다.</li>
+				</ol>
+				<p class="terms_txt">그 밖의 사항은 개인정보처리방침을 준수합니다.</p>
+			</div>
+			<div class="terms_agree">
+				<span class="input_chk">
+					<input type="checkbox" id="check1" name="check1">
+					<label id="lbl_chk_1" for="check1" class="lbl"><span class="sp_ir ico_chk"></span>개인정보 수집 및 이용에 대해서 동의합니다.</label>
+				</span>
+			</div>
+		</div>
+		<div class="terms_wrap">
+			<h3 class="terms_tit">유의사항</h3>
+			<div class="terms_txt_wrap highlight">
+				<p class="terms_txt">NHN엔터테인먼트 주식회사는 보내주신 제안을 검토한 후 사업 진행이 결정되면 꼭 연락을 드려 함께 진행할 수 있도록 하겠습니다.<br>다만, 제휴 제안 검토 후 이를 거절할 수 있고 이 경우 제안자에 대해 보상, 회신 등 기타 의무를 부담하지 않는다는 점 양해부탁 드립니다.<br>한편, 제휴 제안 내용 및 관련 자료는 제휴 검토 목적으로만 이용되며, 제휴 제안이 받아들여지지 않을 경우 즉시파기됩니다.</p>
+			</div>
+			<div class="terms_agree">
+				<span class="input_chk on">
+					<input type="checkbox" id="check2" name="check2">
+					<label id="lbl_chk_2" for="check2" class="lbl"><span class="sp_ir ico_chk"></span>유의 사항 내용을 확인하였습니다.</label>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="popup_footer">
+		<div class="btn_foot_area">
+			<button type="submit" class="btn btn_invert btn_s">확인</button>
+			<button type="button" class="btn btn_s style_b4b4b4">취소</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

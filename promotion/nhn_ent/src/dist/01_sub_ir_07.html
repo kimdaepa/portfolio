@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="sub_page">
+<!-- [D] 스킵 네비게이션 -->
+<div id="u_skip" class="u_skip">
+	<a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>네이게이션으로 바로가기</span></a>
+	<a href="#content" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<div class="ne_header_inner_con">
+				<h1 class="nhnent"><a href="#" class="nhnent_link"><span class="blind">NHN Entertainment</span></a></h1>
+				<nav id="nav" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<li class="nav_item on"><a href="#" class="nav_link">NHN Ent.</a></li>
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">Service</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">PR</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR</a></li>
+						<li class="nav_item nav_recruit"><a href="#" class="nav_link">Recruit</a></li>
+						<li class="nav_item nav_locale on"><a href="#" class="nav_link">KR</a></li>
+						<li class="nav_item nav_locale"><a href="#" class="nav_link">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="ne_header_inner_con_over">
+				<nav id="nav2" class="ne_global_nav" role="navigation">
+					<!-- [D] 우측 기준일 경우 right_nav_lst 클래스 추가 -->
+					<ul class="global_nav_lst right_nav_lst">
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">기업지배구조</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">공시정보</a></li>
+						<li class="nav_item on"><a href="#" class="nav_link">주가정보</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">재무재표</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR일정</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR자료실</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">일반공고</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<main id="container" class="sub" role="main">
+		<section class="section sub_ir">
+			<div class="tit_box">
+				<h2 class="section_tit">주가정보</h2>
+				<div class="content_nav">
+				    <ul class="content_nav_lst">
+					    <li class="content_nav_item">
+							<a href="#"><span>실시간 주가</span></a>
+						</li>
+					    <li class="content_nav_item on">
+							<a href="#"><span>일별 시세</span></a>
+						</li>
+				    </ul>
+				</div>
+			</div>
+			<div class="ir_article">
+	            <h3 class="blind">일별시세</h3>
+	            <div class="period_sel_area">
+	                <ul class="chk_lst">
+	                <li>
+	                    <!-- label 선택 시 .on 추가 -->
+	                    <span class="input_radio" id="span_period0">
+	                        <input type="radio" name="period" id="period_rdo0">
+	                        <label for="period_rdo0" class="lbl"><span class="sp_ico_after ico_radio"></span>1주</label>
+	                    </span>
+	                </li>
+	                <li>
+	                    <span class="input_radio" id="span_period1">
+	                        <input type="radio" name="period" id="period_rdo1">
+	                        <label for="period_rdo1" class="lbl"><span class="sp_ico_after ico_radio"></span>1개월</label>
+	                    </span>
+	                </li>
+	                <li>
+	                    <span class="input_radio on" id="span_period2">
+	                        <input type="radio" name="period" id="period_rdo2">
+	                        <label for="period_rdo2" class="lbl"><span class="sp_ico_after ico_radio"></span>3개월</label>
+	                    </span>
+	                </li>
+	                <li>
+	                    <span class="input_radio" id="span_period3">
+	                        <input type="radio" name="period" id="period_rdo3">
+	                        <label for="period_rdo3" class="lbl"><span class="sp_ico_after ico_radio"></span>6개월</label>
+	                    </span>
+	                </li>
+	                <li>
+	                    <span class="input_radio" id="span_period4">
+	                        <input type="radio" name="period" id="period_rdo4">
+	                        <label for="period_rdo4" class="lbl"><span class="sp_ico_after ico_radio"></span>1년</label>
+	                    </span>
+	                </li>
+	                <li>
+	                    <span class="input_radio" id="span_period5">
+	                        <input type="radio" name="period" id="period_rdo5">
+	                        <label for="period_rdo5" class="lbl"><span class="sp_ico_after ico_radio"></span>3년</label>
+	                    </span>
+	                </li>
+	                </ul>
+	            </div>
+	            <div class="graph graph2" id="stock_graph">
+	                <img src="img/ir/chart/IrMarketPriceChart_2.png" width="1080" height="440" alt="그래프 대체이미지">
+	            </div>
+				<div class="data_range_box ir_schedule middle_sec">
+					<div class="form_table">
+						<div class="form_table_cell">
+							<div class="cell_inner" style="width:100px">
+								<!-- [D] 활성화 on 추가 -->
+								<!-- [D] 옵션 선택 후 클래스 select 추가 -->
+								<div class="select_box select">
+									<p class="style_select_box">
+										<a href="#">
+											<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+											<span class="sel_val">3개월</span>
+										</a>
+									</p>
+									<div class="sel_option">
+										<ul class="list">
+											<li><a href="#">9개월</a></li>
+											<li><a href="#">6개월</a></li>
+											<li><a href="#">3개월</a></li>
+											<li><a href="#">1개월</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cell_inner date_pick">
+								<!-- [D] 활성화 on 추가 -->
+								<div class="search_date" style="width:135px">
+									<span class="input_datepicker">
+										<label for="date" class="blind">날짜</label>
+										<input type="text" class="input_txt input_date" id="date" value="2016.03.25" readonly="">
+										<button type="button" class="btn_cal"><span class="sp_ico ico_cal"><span class="blind">달력 열기</span></span></button>
+									</span>
+								</div>
+								<div class="txt_bar"></div>
+								<!-- [D] 활성화 on 추가 -->
+								<div class="search_date" style="width:135px">
+									<span class="input_datepicker">
+										<label for="date" class="blind">날짜</label>
+										<input type="text" class="input_txt input_date" id="date" value="2016.03.25" readonly="">
+										<button type="button" class="btn_cal"><span class="sp_ico ico_cal"><span class="blind">달력 열기</span></span></button>
+									</span>
+								</div>
+							</div>
+							<a href="#" class="btn btn_invert">조회</a>
+						</div>
+					</div>
+				</div>
+				<div class="tbl_wrap">
+					<table class="tbl padding_left_type tbl_rt_stock">
+		                <caption><span class="blind">주가정보 테이블</span></caption>
+		                <colgroup>
+			                <col style="width:200px">
+							<col style="width:180px">
+							<col style="width:180px">
+							<col style="width:180px">
+							<col style="width:80px">
+							<col style="">
+		                </colgroup>
+		                <thead>
+		                <tr>
+		                    <th scope="col" class="align_left">시간</th>
+		                    <th scope="col" class="align_left">체결가</th>
+		                    <th scope="col" class="align_left">전일대비</th>
+							<th scope="col" class="align_left">등락률</th>
+							<th scope="col" class="align_right">거래주(주)</th>
+							<th scope="col" class="align_right">거래대금(주)</th>
+		                </tr>
+		                </thead>
+		                <tbody>
+							<tr>
+								<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+								<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+								<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+								<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+								<!-- [D] 주가 상승 / 하락 이미지 up,down 클래스로 제어 -->
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left down">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+							<tr>
+		                        <td class="align_left">1:30:25</td>
+								<td class="align_left">61,600</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									800
+								</td>
+								<td class="align_left up">
+									<span class="sp_ico_after ico_ud"><span class="blind">상승/하락 이미지</span></span>
+									1.29
+								</td>
+								<td class="align_right">2</td>
+								<td class="align_right">61,600</td>
+		                    </tr>
+		                </tbody>
+		            </table>
+			    </div>
+	        </div>
+			<div class="pagenav_wrap">
+				<ul class="lst_pagenav">
+					 <li class="pagenav"><a href="#" class="pagenav_prev"><span class="btn_page pre">이전</span></a></li>
+					<li class="pagenav on"><a href="#" class="btn_page">1</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">2</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">3</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">4</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">5</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">6</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">7</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">8</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">9</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">10</a></li>
+					<li class="pagenav"><a href="#" class="pagenav_next"><span class="btn_page next">다음</span></a></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!-- //container -->
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="legal_lst">
+				<li class="legal_item">
+					<a href="#" class="legal_link">제휴제안</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link">기업윤리상담센터</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link"><strong>개인정보 처리방침</strong></a>
+				</li>
+			</ul>
+			<ul class="sub_co_lst">
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Global Site</a></li>
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Family Site</a></li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

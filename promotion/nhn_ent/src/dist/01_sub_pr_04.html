@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="sub_page">
+<!-- [D] 스킵 네비게이션 -->
+<div id="u_skip" class="u_skip">
+	<a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>네이게이션으로 바로가기</span></a>
+	<a href="#content" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<div class="ne_header_inner_con">
+				<h1 class="nhnent"><a href="#" class="nhnent_link"><span class="blind">NHN Entertainment</span></a></h1>
+				<nav id="nav" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<li class="nav_item on"><a href="#" class="nav_link">NHN Ent.</a></li>
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">Service</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">PR</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR</a></li>
+						<li class="nav_item nav_recruit"><a href="#" class="nav_link">Recruit</a></li>
+						<li class="nav_item nav_locale on"><a href="#" class="nav_link">KR</a></li>
+						<li class="nav_item nav_locale"><a href="#" class="nav_link">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="ne_header_inner_con_over">
+				<nav id="nav2" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">보도자료</a></li>
+						<li class="nav_item on"><a href="#" class="nav_link">언론기사</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">광고 홍보영상</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<main id="container" class="sub" role="main">
+		<section class="section sub_pr">
+			<div class="tit_box">
+				<h2 class="section_tit">언론기사</h2>
+			</div>
+			<div class="search_area">
+				<form class="pr_form" name="pr_form">
+					<fieldset>
+						<legend class="blind">자료 검색</legend>
+						<!-- [D] 검색창 활성화 시 클래스 on 추가 -->
+						<div class="search_input on">
+							<button type="button" class="sp_ico_after btn_search"><span class="blind">검색 아이콘 버튼</span></button>
+							<span class="search_txt">검색</span>
+							<label for="inputName" class="blind">자료 검색</label>
+							<!-- [D] 검색어 text 클래스 on -->
+							<input type="text" name="" id="inputName" value="페이코" placeholder="" class="inpt_txt">
+							<!-- [D] input value 입력시 display:block 적용 필요 -->
+							<button type="button" class="btn_delete_file" style="display:block"><span class="blind">파일삭제</span></button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		    <div class="tbl_wrap">
+		        <table class="tbl">
+		            <caption>
+		                <span class="blind">언론기사 테이블</span>
+					</caption>
+		            <colgroup>
+		                <col style="width:85px">
+		                <col style="">
+						<col style="width:170px">
+						<col style="width:140px">
+		            </colgroup>
+		            <thead>
+		                <tr>
+		                    <th scope="col">번호</th>
+		                    <th scope="col" class="align_left">제목</th>
+							<th scope="col" class="align_left">언론사</th>
+							<th scope="col" class="align_left">등록일</th>
+		                </tr>
+		            </thead>
+		            <tbody>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+		                        <a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+						<tr class="">
+		                    <td>1</td>
+		                    <td class="align_left">
+								<a href="#" class="table_title">NHN엔터, 해외법인 포함 기술부문 경력자 공개 채용</a>
+		                    </td>
+							<td class="align_left">디지털데일리</td>
+							<td class="align_left">2018.03.23</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+			<div class="pagenav_wrap">
+				<ul class="lst_pagenav">
+					 <li class="pagenav"><a href="#" class="pagenav_prev"><span class="btn_page pre">이전</span></a></li>
+					<li class="pagenav on"><a href="#" class="btn_page">1</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">2</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">3</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">4</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">5</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">6</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">7</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">8</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">9</a></li>
+					<li class="pagenav"><a href="#" class="btn_page">10</a></li>
+					<li class="pagenav"><a href="#" class="pagenav_next"><span class="btn_page next">다음</span></a></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!-- //container -->
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="legal_lst">
+				<li class="legal_item">
+					<a href="#" class="legal_link">제휴제안</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link">기업윤리상담센터</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link"><strong>개인정보 처리방침</strong></a>
+				</li>
+			</ul>
+			<ul class="sub_co_lst">
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Global Site</a></li>
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Family Site</a></li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

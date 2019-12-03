@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="sub_page">
+<!-- [D] 스킵 네비게이션 -->
+<div id="u_skip" class="u_skip">
+	<a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>네이게이션으로 바로가기</span></a>
+	<a href="#content" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<div class="ne_header_inner_con">
+				<h1 class="nhnent"><a href="#" class="nhnent_link"><span class="blind">NHN Entertainment</span></a></h1>
+				<nav id="nav" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<li class="nav_item on"><a href="#" class="nav_link">NHN Ent.</a></li>
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">Service</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">PR</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR</a></li>
+						<li class="nav_item nav_recruit"><a href="#" class="nav_link">Recruit</a></li>
+						<li class="nav_item nav_locale on"><a href="#" class="nav_link">KR</a></li>
+						<li class="nav_item nav_locale"><a href="#" class="nav_link">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="ne_header_inner_con_over">
+				<nav id="nav2" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item on"><a href="#" class="nav_link">회사소개</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">주요 관계사</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">글로벌 네트워크</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">정보보호인증</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<main id="container" class="sub sub_full" role="main">
+		<div class="slide_box">
+			<!-- [D] fade in/out 제어를 위한 z-index, opacity 값 변경  -->
+			<ul class="slide_list">
+				<li class="slide1" style="z-index:8;opacity:1;background-image:url(img/nhnent/@001.png)"><span class="blind">PLAY MUSEUM 로비</span></li>
+				<li class="slide2" style="z-index:7;opacity:0;background-image:url(img/nhnent/in_gf_500.jpg)"><span class="blind">GOOD FRIENDS 카페</span></li>
+				<li class="slide3" style="z-index:6;opacity:0;background-image:url(img/nhnent/in_629_500.jpg)"><span class="blind">PORT 629 사내식당</span></li>
+				<li class="slide4" style="z-index:5;opacity:0;background-image:url(img/nhnent/in_support_500.jpg)"><span class="blind">TRAVEL 지원공간</span></li>
+				<li class="slide5" style="z-index:4;opacity:0;background-image:url(img/nhnent/in_post_500.jpg)"><span class="blind">SUPPORT 업무지원센터</span></li>
+				<li class="slide6" style="z-index:3;opacity:0;background-image:url(img/nhnent/in_hive_500.jpg)"><span class="blind">HIVE 업무공간</span></li>
+				<li class="slide7" style="z-index:2;opacity:0;background-image:url(img/nhnent/in_toast_500.jpg)"><span class="blind">TOAST ZONE 대강당</span></li>
+				<li class="slide8" style="z-index:1;opacity:0;background-image:url(img/nhnent/in_track_500.jpg)"><span class="blind">TRACK 헬스장</span></li>
+			</ul>
+		   <div class="slide_control">
+			   <div class="slide_content_tit">
+				   <strong class="lang_en">
+					   Play Museum Robby
+				   </strong>
+			   </div>
+			   <div class="control_box">
+				   <p class="page_text lang_en">
+					   <span>1</span>
+					   /
+					   <span>10</span>
+				   </p>
+				   <div class="control_button">
+					   <!-- [D] 버튼 활성화 시 on 클래스 -->
+					   <button type="button" class="sp_ico_after btn_prev"><span class="blind">이전 슬라이드 이동 버튼</span></button>
+					   <button type="button" class="sp_ico_after btn_next on"><span class="blind">다음 슬라이드 이동 버튼</span></button>
+				   </div>
+			   </div>
+		   </div>
+		</div>
+		<section class="section sub_about">
+			<div class="ne_section intro_section">
+				<div class="ne_section_inner">
+					<h2 class="section_tit">회사소개</h2>
+					<div class="default_section">
+						<strong class="tit_point">NHN엔터테인먼트는 대한민국 최대 인터넷 기업인 NHN㈜에서 게임사업부문(한게임)을 분할,<br>
+							2013년 8월 1일새롭게 출범한 종합 IT 기업입니다.</strong>
+						<p class="about_txt">
+							한국 최초의 온라인 게임 포털인 한게임을 비롯해 ‘LINE 디즈니 쯔무쯔무’와 ‘LINE POP 시리즈’, ‘크루세이더퀘스트’, ‘요괴워치 푸니푸니’, ‘콤파스’ 등<br>
+							모바일 게임을 개발하고 서비스하고 있으며, 결제와 엔터테인먼트, IT, 광고 등  다양한 사업 분야에 진출, IT 기반 종합 엔터테인먼트 그룹으로 성장해나가고 있습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- [D] history 버튼 클릭 시 see_all 클래스 추가 -->
+			<div class="ne_section history_section see_all">
+				<div class="ne_section_inner ">
+					<h3 class="tit_subsection lang_en">History</h3>
+					<div class="default_section">
+						<ul class="history_list">
+							<li class="list_item inactive_list">
+								<strong>1998</strong>
+							</li>
+							<li class="list_item">
+								<strong>2013</strong>
+								<ul class="detail_history">
+									<li>
+										<span class="history_month">8</span>
+										<p class="history_txt">
+											NHN㈜에서<br>
+											NHN엔터테인먼트㈜로 인적분할
+										</p>
+									</li>
+									<li>
+										<span class="history_month">10</span>
+										<p class="history_txt">
+											웹툰 서비스 ‘코미코(Comico)’<br>
+											출시
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="list_item">
+								<strong>2014</strong>
+								<ul class="detail_history">
+									<li>
+										<span class="history_month">2</span>
+										<p class="history_txt">
+											게임 개발 전문 자회사 설립<br>
+											(NHN픽셀큐브㈜ 外)
+										</p>
+									</li>
+									<li>
+										<span class="history_month">12</span>
+										<p class="history_txt">
+											통합 클라우드 솔루션 ‘TOAST’<br>
+											공개
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="list_item">
+								<strong>2017</strong>
+								<ul class="detail_history">
+									<li>
+										<span class="history_month">4</span>
+										<p class="history_txt">
+											NHN엔터테인먼트㈜에서 물적<br>
+											분할을 통해 NHN페이코㈜ 설립
+										</p>
+									</li>
+									<li>
+										<span class="history_month">7</span>
+										<p class="history_txt">
+											디지털 전문 광고기업<br>
+											㈜NHN ACE  설립
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="list_item inactive_list">
+								<strong>2018</strong>
+							</li>
+						</ul>
+						<a href="#" class="btn_all">See All</a>
+					</div>
+					<div class="see_all_section">
+						<ul class="history_list">
+							<li class="list_item col_5 row_1">
+								<strong>1998. 11</strong>
+								<p class="history_txt">
+									㈜한게임 커뮤니케이션 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>1999. 12</strong>
+								<p class="history_txt">
+									국내 최초 온라인 게임포털 ‘한게임’<br>
+									정식 오픈
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2000. 4</strong>
+								<p class="history_txt">
+									한게임 - 네이버컴 합병
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2001. 8</strong>
+								<p class="history_txt">
+									한게임, 온라인 게임 퍼블리싱 사업 진출
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2001. 9</strong>
+								<p class="history_txt">
+									NHN㈜로 사명 변경
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2002. 10</strong>
+								<p class="history_txt">
+									코스닥 등록
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2004. 11</strong>
+								<p class="history_txt">
+									게임 개발 스튜디오 NHN게임즈㈜ 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2005. 7</strong>
+								<p class="history_txt">
+									미국법인 NHN USA 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2007. 5</strong>
+								<p class="history_txt">
+									NHN USA, 게임포털서비스 ‘ijji.com’<br>정식 서비스 시작
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2008. 11</strong>
+								<p class="history_txt">
+									유가증권시장(KOSPI) 이전 상장
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2009. 09</strong>
+								<p class="history_txt">
+									한게임 재팬 법인 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2010. 04</strong>
+								<p class="history_txt">
+									투자전문회사 NHN Investment 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_3">
+								<strong>2011. 1</strong>
+								<p class="history_txt">
+									스마트폰 게임 개발사 오렌지크루㈜ 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_3">
+								<strong>2012. 1</strong>
+								<p class="history_txt">
+									NHN SINGAPORE PTE.LTD 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_3">
+								<strong>2013. 8</strong>
+								<p class="history_txt">
+									NHN㈜에서 NHN엔터테인먼트㈜로<br>
+									인적분할
+								</p>
+								<p class="history_txt">
+									NHN엔터테인먼트㈜,판교 신사옥<br>
+									플레이뮤지엄 입주
+								</p>
+								<p class="history_txt">
+									NHN엔터테인먼트㈜ 유가증권시장<br>
+									(KOSPI) 상장
+								</p>
+							</li>
+							<li class="list_item col_5 row_3">
+								<strong>2013. 10</strong>
+								<p class="history_txt">
+									웹툰 서비스 ‘코미코(Comico)’ 출시
+								</p>
+							</li>
+							<li class="list_item col_5 row_2">
+								<strong>2014. 2</strong>
+								<p class="history_txt">
+									게임 개발 전문 자회사 설립<br>
+									(NHN픽셀큐브㈜ 外)
+								</p>
+							</li>
+							<li class="list_item col_5 row_2">
+								<strong>2014. 4</strong>
+								<p class="history_txt">
+									DB보안솔루션 전문업체 ㈜PNP시큐어<br>
+									인수
+								</p>
+							</li>
+							<li class="list_item col_5 row_2">
+								<strong>2014. 6</strong>
+								<p class="history_txt">
+									예매사이트 티켓링크 (현 NHN티켓링크㈜)<br>
+									인수
+								</p>
+							</li>
+							<li class="list_item col_5 row_2">
+								<strong>2014. 7</strong>
+								<p class="history_txt">
+									온라인쇼핑 솔루션 기업 고도소프트<br>
+									(현 NHN고도㈜) 인수
+								</p>
+								<p class="history_txt">
+									대만법인 NHN Taiwan Corp. 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2014. 9</strong>
+								<p class="history_txt">
+									한국사이버결제<br>
+									(현 NHN한국사이버결제㈜) 인수
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2014. 12</strong>
+								<p class="history_txt">
+									통합 클라우드 솔루션 ‘TOAST’ 공개
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2015. 7</strong>
+								<p class="history_txt">
+									네오위즈인터넷(현 NHN벅스㈜) 인수
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2015. 8</strong>
+								<p class="history_txt">
+									간편결제 서비스 페이코(PAYCO) 출시
+								</p>
+							</li>
+
+							<li class="list_item col_5 row_1">
+								<strong>2016. 4</strong>
+								<p class="history_txt">
+									판교테크노밸리 최초 장애인 표준사업장<br>
+									NHN굿프렌즈 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2017. 4</strong>
+								<p class="history_txt">
+									NHN엔터테인먼트㈜에서 물적분할을 통해<br>
+									NHN페이코㈜ 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2017. 7</strong>
+								<p class="history_txt">
+									디지털 전문 광고기업 ㈜NHN ACE  설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2017. 8</strong>
+								<p class="history_txt">
+									베트남법인 NHN Vietnam Company<br>
+									Limited 설립
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2017. 12</strong>
+								<p class="history_txt">
+									클라우드 보안 인증 획득, 공공기관 전용<br>
+									‘G-토스트 클라우드’ 서비스 시작
+								</p>
+							</li>
+							<li class="list_item col_5 row_1">
+								<strong>2018. 03</strong>
+								<p class="history_txt">
+									게임개발사 'NHN빅풋' 설립<br>
+									(NHN629㈜, NHN블랙픽㈜ 합병)
+								</p>
+							</li>
+							<li class="list_item col_5">
+							</li>
+							<li class="list_item col_5">
+							</li>
+						</ul>
+						<a href="#" class="btn_all">Close</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="ne_section">
+				<div class="ne_section_inner">
+					<h3 class="tit_subsection lang_en">Culture</h3>
+					<strong class="tit_point lang_en culture">PLAY HARD, WORK SMART!</strong>
+					<p class="about_txt">
+						구성원 모두가 개인의 삶을 즐길 수 있을 때, 비로소 업무에도 몰입할 수 있다는 사실을 알고 있습니다.<br>
+						NHN엔터테인먼트는 평범하지만 작은 실천을 통해 더 넓은 세상, 더 많은 사람들과 즐거움의 가치를 나누고자 노력하고 있습니다.
+					</p>
+					<ul class="ne_keywords">
+					    <li class="ne_keyword keyword1">
+							<div class="img_box">
+								<img src="img/img-worknlife.png" width="161" height="126" alt="Work & Life 배경 이미지">
+							</div>
+					        <strong class="keyword_tit lang_en">Work & Life</strong>
+					        <p class="keyword_dsc">우리는 똑똑하게 일하고,<br>충분한 휴식을 통해 함께 성장합니다.</p>
+					    </li>
+					    <li class="ne_keyword keyword2">
+							<div class="img_box">
+								<img src="img/img-purpletime.png" width="129" height="129" alt="Pupple Time 배경 이미지">
+							</div>
+							<strong class="keyword_tit lang_en">Work & Life</strong>
+					        <p class="keyword_dsc">개인의 라이프 스타일을 존중하는<br>자율출퇴근제도 ‘퍼플타임제’</p>
+					    </li>
+					    <li class="ne_keyword keyword3">
+							<div class="img_box">
+								<img src="img/img-wefamily.png" width="141" height="132" alt="We Family! 배경 이미지">
+							</div>
+							<strong class="keyword_tit lang_en">Work & Life</strong>
+					        <p class="keyword_dsc">매년 5월, 임직원 가족과 함께하는<br>‘위패밀리데이(WeFamily)’</p>
+					    </li>
+						<li class="ne_keyword keyword4">
+							<div class="img_area">
+								<img src="img/img-40-club.png" width="133" height="128" alt="40+ club 배경 이미지">
+							</div>
+							<strong class="keyword_tit lang_en">Work & Life</strong>
+					        <p class="keyword_dsc">만 40세 이상의 직원을 위한<br>건강관리 프로그램 ‘40+클럽’</p>
+					    </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="ne_section">
+				<div class="ne_section_inner">
+					<h3 class="tit_subsection lang_en">Location</h3>
+					<!-- [D] 임시 지도 영역 -->
+					<div class="map_area ">
+						<img src="img/@map.jpg" alt="NHN 엔터테인먼트 지도">
+					</div>
+					<div class="addr_info_wrap">
+						<p class="addr_ko">
+							경기도 성남시 분당구 대왕판교로645번길 16 NHN엔터테인먼트 플레이뮤지엄<br>
+							(경기도 성남시 분당구 삼평동 629 NHN엔터테인먼트 플레이뮤지엄)
+						</p>
+						<p class="addr_en lang_en">NHN Ent. Play Museum, 16, Daewangpangyo-ro645beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do</p>
+						<dl class="contact_info">
+							<dt class="ico_tel sp_ico_after"><span class="blind">전화번호</span></dt>
+							<dd>1544-6859 (ARS)</dd>
+							<dt class="ico_fax sp_ico_after"><span class="blind">팩스번호</span></dt>
+							<dd><a href="tel:031-8038-3000">031-8038-3000</a></dd>
+							<dt class="ico_brn sp_ico_after"><span class="blind">사업자등록번호</span></dt>
+							<dd>144-81-15549</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- //container -->
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="legal_lst">
+				<li class="legal_item">
+					<a href="#" class="legal_link">제휴제안</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link">기업윤리상담센터</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link"><strong>개인정보 처리방침</strong></a>
+				</li>
+			</ul>
+			<ul class="sub_co_lst">
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Global Site</a></li>
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Family Site</a></li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/unslider-min.js"></script>
+<script>
+	$(function(){
+		$('.slider').unslider({
+			animation: 'fade',
+			speen: 1200,
+			autoplay: true,
+			arrows: false,
+			nav: false,
+		});
+	});
+</script>
+</body>
+</html>

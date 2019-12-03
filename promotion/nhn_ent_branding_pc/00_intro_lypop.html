@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>RWBY: Amity Arena</title>
+<link rel="stylesheet" href="css/common.css">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<!-- [D] 인트로페이지 노출 시만 .page_intro 추가 -->
+<body class="page_intro">
+
+<div id="intro_wrap" class="wrap">
+	<!-- header -->
+	<header id="intro_header" class="header">
+		<div class="intro_sns">
+			<ul>
+				<li><a href="" class="btn instagram"><span class="blind">instagram</span></a></li>
+				<li><a href="" class="btn twitter"><span class="blind">twitter</span></a></li>
+				<li><a href="" class="btn facebook"><span class="blind">facebook</span></a></li>
+				<li><a href="" class="btn youtube"><span class="blind">youtube</span></a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<section class="container">
+		<h1 class="logo"><span class="blind">WRBY</span></h1>
+		<div class="intro">
+			<div class="inner_intro">
+				<div class="v_list">
+					<ul>
+						<li class="list_item one">
+							<!-- [D] 페이지 로딩 시, item_area의 margin-top:X% -> 0 으로 순차변경 필요 (아래 에서 위로 이동)-->
+							<div class="item_area" style="margin-top:0;background:url('./img/intro_char.png') no-repeat">
+								<img src="./img/intro_char.png" alt="img">
+							</div>
+						</li>
+						<li class="list_item two">
+							<!-- [D] 페이지 로딩 시, item_area의 margin-right:X% -> 0 으로 순차변경 필요 (왼쪽 에서 오른쪽으로 이동)-->
+							<div class="item_area" style="margin-right:0;">
+								<img src="./img/intro_char2.png" alt="img">
+							</div>
+						</li>
+						<li class="list_item three" style="">
+							<!-- [D] 페이지 로딩 시, item_area의 margin-bottom:X% -> 0 으로 순차변경 필요 (위 에서 아래로 이동)-->
+							<div class="item_area" style="margin-bottom:0">
+								<img src="./img/intro_char3.png" alt="img">
+							</div>
+						</li>
+						<li class="list_item four" style="margin-left:0">
+							<!-- [D] 페이지 로딩 시, item_area의 left:X% -> 0 으로 순차변경 필요 (오른쪽 에서 왼쪽으로 이동)-->
+							<div class="item_area" style="">
+								<img src="./img/intro_char4.png" alt="img">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="" class="btn_move_view"><span class="blind">move_view</span></a>
+		<a href="" class="btn_page_scroll"><span class="blind">page_scroll</span></a>
+	</section>
+	<!-- //container -->
+	<!-- lypop -->
+	<!-- [D] 레이어 팝업 노출시 dimmed 클래스에 on 추가적용 필요 -->
+	<div class="dimmed on"></div>
+	<!-- [D] 레이어 팝업 노출시 lypop_move 클래스에 on 추가적용 필요 -->
+	<div class="lypop_move on">
+		<div class="pop_contents">
+			<iframe width="1100" height="648" src="https://www.youtube.com/embed/pYW2GmHB5xs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<a href="" class="btn_close_lypop"><span class="blind">close</span></a>
+		</div>
+	</div>
+</div>
+<!-- //wrap -->
+
+<!-- wrap -->
+<div id="wrap" class="wrap" style="display: none">
+	<!-- header -->
+	<header id="header" class="header">
+		<div class="inner_header">
+			<h1 class="logo"><a href=""><span class="blind">RWBY</span></a></h1>
+			<div class="gnb">
+				<div class="gnb_menu">
+					<ul>
+						<!-- [D] 버튼 활성화시 class="selected" 추가 필요 -->
+						<li class="selected"><a href="">Game intro</a></li>
+						<li><a href="">Newsletter</a></li>
+						<li><a href="">Influencer Program</a></li>
+						<li><a href="">Media</a></li>
+					</ul>
+				</div>
+				<div class="gnb_sns">
+					<ul>
+						<li><a href="" class="btn instagram"><span class="blind">instagram</span></a></li>
+						<li><a href="" class="btn twitter"><span class="blind">twitter</span></a></li>
+						<li><a href="" class="btn facebook"><span class="blind">facebook</span></a></li>
+						<li><a href="" class="btn youtube"><span class="blind">youtube</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<section class="container gameinfo_about">
+		<div class="contents">
+			<div class="inner_contents">
+				<div class="contents_section">
+					<div class="about_info">
+						<h2>About RWBY: Amity Arena</h2>
+						<p>Command RWBY Characters in a Real time Strategic Duel!<br>
+						Play the new mobile game on your phone, tablet, or scroll!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="" class="btn_page_scroll"><span class="blind">page_scroll</span></a>
+    </section>
+
+	<section class="container gameinfo_arena">
+		<div class="arena_gallery">
+			<ul>
+				<!-- [D] 선택 노출시 li에 active 클래스 추가 필요 -->
+				<li class="arena_g1"><span class="blind">arena1</span></li>
+				<li class="arena_g2"><span class="blind">arena2</span></li>
+				<li class="arena_g3 active"><span class="blind">arena3</span></li>
+				<li class="arena_g4"><span class="blind">arena4</span></li>
+				<li class="arena_g5"><span class="blind">arena5</span></li>
+				<li class="arena_g6"><span class="blind">arena6</span></li>
+				<li class="arena_g7"><span class="blind">arena7</span></li>
+				<li class="arena_g8"><span class="blind">arena8</span></li>
+				<li class="arena_g9"><span class="blind">arena9</span></li>
+			</ul>
+		</div>
+		<div class="contents">
+			<div class="inner_contents">
+				<div class="contents_section">
+					<div class="about_info">
+						<h2>Arena</h2>
+						<p>Several biomes to fight in. Explore the arenas across Remnant!</p>
+					</div>
+				</div>
+				<div class="thumbnail_list">
+					<div class="arena_img_list">
+						<a href="" class="btn pre"><span class="blind">Previous</span></a>
+						<ul>
+							<!-- [D] 버튼 활성화시 class="selected" 추가 필요 -->
+							<li>
+								<a href="" class="arena_1"><span class="arena_num">Arena 1</span></a>
+							</li>
+							<li>
+								<a href="" class="arena_2"><span class="arena_num">Arena 2</span></a>
+							</li>
+							<li class="selected">
+								<a href="" class="arena_3"><span class="arena_num">Arena 3</span></a>
+							</li>
+							<li>
+								<a href="" class="arena_4"><span class="arena_num">Arena 4</span></a>
+							</li>
+							<li>
+								<a href="" class="arena_5"><span class="arena_num">Arena 5</span></a>
+							</li>
+							<li>
+								<a href="" class="arena_6"><span class="arena_num">Arena 6</span></a>
+							</li>
+							<li>
+								<a href="" class="arena_7"><span class="arena_num">Arena 7</span></a>
+							</li>
+							<li>
+								<a href="" class="arena_8"><span class="arena_num">Arena 8</span></a>
+							</li>
+							<li>
+								<a href="" class="arena_9"><span class="arena_num">Arena 9</span></a>
+							</li>
+						</ul>
+						<a href="" class="btn next"><span class="blind">Next</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="" class="btn_page_scroll"><span class="blind">page_scroll</span></a>
+    </section>
+
+	<section class="container newsletter">
+		<div class="contents">
+			<div class="inner_contents">
+				<div class="contents_section">
+					<!-- newsletter 페이지 로딩과 함께 캐릭터 이동(좌 -> 우) -->
+					<!-- [D] margin-left값 변경 필요 (style="margin-left: -115% -> style="margin-left: 0%) -->
+					<div class="bg_character" style="margin-left: 0%;"></div>
+					<div class="about_info">
+						<h2>Sign up for our Newsletter!</h2>
+						<p>
+							Our newsletter gives you exclusive info for<br>
+							RWBY: Amity Arena like pre-registration alerts,<br>
+							Closed Beta Test opportunities, and special promotions!
+						</p>
+					</div>
+					<div class="box_inner">
+						<!-- 유효성 검사 -->
+						<!-- [D] input text 유효성 검사 후 오류시 warning 클래스 추가 필요 -->
+						<!-- [D] input 활성화시(클릭 후 글쓰기 커서 활성화) 기본 value값 삭제 필요 -->
+						<div class="input_info ">
+							<label for="input_addr" class="blind">enter your e-mail address</label>
+							<input type="text" id="input_addr" name="" class="input_val" placeholder="Enter your e-mail address">
+							<span class="warning_msg">* Please provide a valid email address.</span>
+						</div>
+						<button type="button" name="" id="" class="btn_confirm">SUBSCRIBE</button>
+						<div class="info_newsletter">
+							<ul>
+								<li>By clicking ‘SUBSCRIBE’, you are indicating that you have read and agree to the <a href="">Privacy Policy.</a></li>
+								<li>We only send newsletters when we have something important to share.</li>
+								<li>This newsletter is free, and you can unsubscribe at any time.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<a href="" class="btn_page_scroll"><span class="blind">page_scroll</span></a>
+    </section>
+
+	<section class="container influencer_program">
+		<div class="contents">
+			<div class="inner_contents">
+				<div class="contents_section">
+					<!-- newsletter 페이지 로딩과 함께 캐릭터 이동(우 -> 좌) -->
+					<!-- [D] margin-right값 변경 필요 (style="margin-left: -120% -> style="margin-left: 0%) -->
+					<div class="bg_character" style="margin-right: 0%"></div>
+					<div class="about_info">
+						<h2>Influencer Program</h2>
+						<div class="program">
+							<dl>
+								<dt>What is this?</dt>
+								<dd>
+									When we launch the game, we’d love to have interested fans talk about RWBY: Amity Arena.<br>
+									Share your tips and strategies, alert your friends and fans about game updates, or just create<br>
+									some funny videos about the game.  Anything you decide to do, we want to know about it!
+								</dd>
+								<dt>Where can I get some more information?</dt>
+								<dd>
+									Our influencer program is separated into tiers based on how you want to contribute, so reach<br>
+									out to us for more information.  We want to make sure that we’re providing you the tools you<br>
+									need to make your content, so let’s chat about what you want to do! Click on the Apply button<br>
+									below to get in touch with us!
+								</dd>
+							</dl>
+						</div>
+						<a href="" class="btn_apply">APPLY</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="" class="btn_page_scroll"><span class="blind">page_scroll</span></a>
+    </section>
+
+	<section class="container media">
+		<div class="contents">
+			<div class="inner_contents">
+				<div class="contents_section">
+					<div class="about_info">
+						<h2>RWBY: Amity Arena Press Kit</h2>
+						<div class="tab_area">
+							<ul class="tab_list">
+								<!-- [D] 버튼 활성화시 a에 class="on" 추가 필요 -->
+								<li><a href="" class="on">Factsheet</a></li>
+								<li><a href="">Description</a></li>
+								<li><a href="">Logo</a></li>
+								<li><a href="">Character Artwork</a></li>
+								<li><a href="">Press Releases</a></li>
+								<li><a href="">Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="info_wrap">
+							<!-- Factsheet -->
+							<div class="info_area factsheet">
+								<!-- [D] 페이징 버튼 비활성화시 btn_go에 off 클래스 추가 필요 -->
+								<!-- [D] off 클래스 추가시 a태그 p태그로 변경 및 href 삭제필요 -->
+								<p class="btn_go prev off"><span class="blind">previously</span></p>
+								<div class="slide_wrap">
+									<!-- [D] width = info_list width x info_list 개수 / 슬라이드 제어 margin-left 값 조정 -->
+									<div class="slide_area" style="width:200%;margin-left:0;">
+										<div class="slide" style="width:50%;">
+											<ul class="info_list">
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Title</dt>
+														<dd class="column">RWBY: Amity Arena</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Release Date</dt>
+														<dd class="column">2018</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Platforms</dt>
+														<dd class="column">Google Play (Android), iTunes App Store (iOS)</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Price</dt>
+														<dd class="column">Free</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Player(s)</dt>
+														<dd class="column">Online only PVP</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Genre</dt>
+														<dd class="column">Real-Time Strategic Duel</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Languages</dt>
+														<dd class="column">English / Korean / Traditional Chinese / Spanish / Portuguese / Thai / Indonesian / Vietnamese</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Languages</dt>
+														<dd class="column">BAOBABNET Corp.</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Publisher</dt>
+														<dd class="column">NHN Entertainment Corp.</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Copyright</dt>
+														<dd class="column">
+															© NHN Entertainment Corp. &amp; BAOBABNET Corp. All Rights Reserved.<br>
+															© 2004 - 2018 Rooster Teeth Productions, LLC. All rights reserved
+														</dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Social</dt>
+														<dd class="column">
+															<ul class="sns">
+																<li><a href="" class="btn instagram"><span class="blind">instagram</span></a></li>
+																<li><a href="" class="btn twitter"><span class="blind">twitter</span></a></li>
+																<li><a href="" class="btn facebook"><span class="blind">facebook</span></a></li>
+																<li><a href="" class="btn service"><span class="blind">service</span></a></li>
+															</ul>
+														</dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+										<div class="slide" style="width:50%;">
+											<ul class="info_list">
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column">Press Inquiry</dt>
+														<dd class="column">Please contact <a href="mailto:alex.fleming@nhnglobal.com" class="mailto">alex.fleming@nhnglobal.com</a></dd>
+													</dl>
+												</li>
+												<li class="item">
+													<dl class="column_box">
+														<dt class="column vt">Key Features</dt>
+														<dd class="column features">
+															<ul>
+																<li>
+																	<span>Real-Time Strategic Duel</span><br>
+																	Place and direct your Huntsmen, White Fang troops, or Atlesian Knights around the different biomes.<br/>
+																	Use your abilities to turn the battle to your favor!
+																</li>
+																<li>
+																	<span>Beautiful Card Artwork and 3D Graphics </span><br>
+																	Immerse yourself in the world of Remnant as you find the next great team<br>
+																	to compete in this year’s Vytal Festival!
+																</li>
+																<li>
+																	<span>Create a Team with Your Favorite Huntresses and Huntsmen</span><br>
+																	Want to battle in evening wear?  Or maybe take on the creatures of Grimm in your Beacon best?<br>
+																	Collect all of the different characters and costumes to make your team stand out!
+
+																</li>
+																<li>
+																	<span>Join an Academy with Friends</span><br>
+																	Join an Academy in Remnant with your friends and class mates!<br>
+																	Challenge another student to a duel with your favorite RWBY characters!
+																</li>
+															</ul>
+														</dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- [D] 페이징 버튼 비활성화시 btn_go에 off 클래스 추가 필요 -->
+								<!-- [D] off 클래스 추가시 a태그 p태그로 변경 및 href 삭제필요 -->
+								<a href="" class="btn_go next"><span class="blind">next</span></a>
+
+								<div class="page_indicator">
+									<ul>
+										<!-- [D] 버튼 활성화시 a에 class="on" 추가 필요 -->
+										<li><a href="" class="on"><span class="blind">1</span></a></li>
+										<li><a href=""><span class="blind">2</span></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Description -->
+							<div class="info_area description" style="display: none;">
+								<p class="desc_title">
+									Have you ever wanted to see how your team of Hunters<br>
+									and Huntresses would compete in the Vytal Festival?<br>
+									Now’s your chance with RWBY: Amity Arena!
+								</p>
+								<p class="desc_info">
+									Brought to you by Rooster Teeth Animation and Hangame, RWBY: Amity Arena transforms your<br>
+									mobile device into a futuristic Scroll powered by the Cross Continental Transmit System,<br>
+									so you can play with friends all across the globe and the world of Remnant!<br>
+									RWBY: Amity Arena takes Remnant by storm as the first of its kind on Scrolls while taking<br>
+									strong inspiration from Remnant: The Board Game. Influences from the popular<br>
+									board game can be seen with the mixed cast of Grimm, Atlassian Technology, and<br>
+									an added twist of up and coming hunters/huntresses that have made the roster<br>
+									for the next Vytal Festival.
+								</p>
+							</div>
+
+							<!-- Logo -->
+							<div class="info_area media_logo" style="display: none;">
+								<img src="img/media_logo.png" width="346" height="346" alt="RWBY logo image">
+								<h3 class="logo_title">RWBY: Amity Arena Logo</h3>
+								<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+							</div>
+
+
+							<!-- Character Artwork -->
+							<div class="info_area" style="display: none;">
+								<!-- [D] 페이징 버튼 비활성화시 btn_go에 off 클래스 추가 필요 -->
+								<!-- [D] off 클래스 추가시 a태그 p태그로 변경 및 href 삭제필요 -->
+								<a href="" class="btn_go prev"><span class="blind">previously</span></a>
+								<div class="slide_wrap">
+									<!-- [D] width = info_list width x info_list 개수 / 슬라이드 제어 margin-left 값 조정 -->
+									<div class="slide_area artwork" style="width:3294px;margin-left:-1098px;">
+										<ul class="slide">
+											<li class="item character1">
+												<strong class="name">Ruby rose</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+											<li class="item character2">
+												<strong class="name">Weiss Schnee</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+											<li class="item character3">
+												<strong class="name">Blake Belladonna</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+										</ul>
+										<ul class="slide">
+											<li class="item character4">
+												<strong class="name">Yang Xiao Long</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+											<li class="item character5">
+												<strong class="name">Jaune Arc</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+											<li class="item character6">
+												<strong class="name">Nora Valkyrie</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+										</ul>
+										<ul class="slide">
+											<li class="item character7">
+												<strong class="name">Pyrrha Nikos</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+											<li class="item character8">
+												<strong class="name">Lie Ren</strong>
+												<button type="button" class="btn_download"><span class="blind">다운로드</span></button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- [D] 페이징 버튼 비활성화시 btn_go에 off 클래스 추가 필요 -->
+								<!-- [D] off 클래스 추가시 a태그 p태그로 변경 및 href 삭제필요 -->
+								<p class="btn_go next off"><span class="blind">next</span></p>
+
+								<div class="page_indicator">
+									<ul>
+										<!-- [D] 버튼 활성화시 a에 class="on" 추가 필요 -->
+										<li><a href=""><span class="blind">1</span></a></li>
+										<li><a href="" class="on"><span class="blind">2</span></a></li>
+										<li><a href=""><span class="blind">3</span></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Press Releases -->
+							<div class="info_area" style="display: none;">
+								<ul class="press_list">
+									<li class="item">
+										<a href="">
+											<strong class="title">NHN Entertainment Teams with Rooster Teeth for RWBY: Amity Arena</strong>
+											<span class="date">04 . 25 . 2018</span>
+										</a>
+									</li>
+									<li class="item">
+										<a href="">
+											<strong class="title">NHN Entertainment Teams with Rooster Teeth for RWBY: Amity Arena</strong>
+											<span class="date">04 . 25 . 2018</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Contact -->
+							<div class="info_area" style="display: none;">
+								<div class="contact_area">
+									<h3 class="contact_msg">For more information,<br>please contact</h3>
+									<a href="mailto:alex.fleming@nhnglobal.com" class="mailto_addr">alex.fleming@nhnglobal.com</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- //container -->
+		<hr>
+		<!-- footer -->
+		<footer id="footer" class="footer">
+			<div class="footer_inner">
+				<ul>
+					<li><a href="" class="btn nhn_ent"><span class="blind">NHN Entertainment</span></a></li>
+					<li><a href="" class="btn rooster_teeth"><span class="blind">Rooster Teeth</span></a></li>
+					<li><a href="" class="btn baobab"><span class="blind">baobab</span></a></li>
+				</ul>
+				<p class="policy"><a href="">Privacy Policy</a></p>
+				<p class="copyright">© NHN Entertainment Corp. & BAOBABNET Corp. All Rights Reserved.  © 2004 - 2018 Rooster Teeth Productions, LLC. All rights reserved</p>
+			</div>
+		</footer>
+		<!-- //footer -->
+    </section>
+
+	<!-- [D] Game Intro Section에서만 노출 되어야 함.  -->
+	<div class="service_paging">
+		<ul>
+			<!-- [D] 버튼 활성화시 class="selected" 추가 필요 -->
+			<li class="selected"><a href="">About</a></li>
+			<li><a href="">Arena</a></li>
+		</ul>
+	</div>
+
+    <!-- lypop -->
+    <!-- [D] 레이어 팝업 노출시 dimmed 클래스에 on 추가적용 필요 -->
+    <div class="dimmed2"></div>
+    <!-- [D] 레이어 팝업 노출시 lypop_move 클래스에 on 추가적용 필요 -->
+    <!-- 성공(success) 시 노출 레이어 팝업 -->
+    <div class="lypop_newletter">
+        <p class="success">
+            You’re now subscribed to the<br>
+            RWBY: Amity Arena newsletter!
+        </p>
+        <a href="" class="btn_msg">GREAT!</a>
+    </div>
+    <!-- [D] 레이어 팝업 노출시 lypop_move 클래스에 on 추가적용 필요 -->
+    <!-- 실패(failed) 시 노출 레이어 팝업 -->
+    <div class="lypop_newletter">
+        <p class="failed">
+            Please enter a valid email address.
+        </p>
+        <a href="" class="btn_msg">OK</a>
+    </div>
+	<!-- [D] 레이어 팝업 노출시 lypop_Policy 클래스에 on 추가적용 필요 -->
+	<!-- Privacy Policy 노출 레이어 팝업 -->
+	<div class="lypop_Policy">
+		<div class="inner_Policy">
+			<p class="pop_tit">Privacy Policy</p>
+			<ol>
+				<li>
+					<p>
+						1. Purpose of collection and use: sending news-letters of “RWBY: Amity Arena” and<br>providing customer service regarding issues related to the said event.
+					</p>
+				</li>
+				<li>
+					<p>
+						2. Items to be collected and used: user email address
+					</p>
+				</li>
+				<li>
+					<p>
+						3. Period of retention and use of personal information: Personal information is retained<br>until user expresses its intent to terminate subscription and destroyed upon receipt<br>of such intent to terminate; guidelines on termination of subscription are separately<br>provided via news-letter email.
+					</p>
+				</li>
+			</ol>
+			<a href="" class="btn_msg">CLOSE</a>
+		</div>
+	</div>
+</div>
+<!-- //wrap -->
+</body>
+</html>

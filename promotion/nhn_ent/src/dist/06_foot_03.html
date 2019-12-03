@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="popup" style="width:800px">
+	<div id="wrap" class="wrap">
+	<header class="popup_header" role="banner">
+		<h1 class="pop_tit">기업윤리 상담센터</h1>
+	</header>
+	<div class="popup_content" role="main">
+		<p class="pop_sub_tit2">
+			<strong>여러분의 소중한 한마디는 정직하고 신뢰받는<br>Business Practice조성을 위하여 커다란 도움이 될 것입니다.</strong>
+		</p>
+		<div class="content_nav pop_nav">
+			<ul class="content_nav_lst pop_nav_lst">
+			<li class="content_nav_item pop_nav_item on"><a href="#">상담/신고하기</a></li>
+			<li class="content_nav_item pop_nav_item"><a href="#">상담자보호 프로그램</a></li>
+			<li class="content_nav_item pop_nav_item"><a href="#">처리결과 확인</a></li>
+			</ul>
+		</div>
+		<h2 class="blind">상담/신고하기</h2>
+		<div class="pop_lst_wrap">
+			<ul class="pop_lst">
+			<li>불공정한 업무처리 및 우월한 지위를 이용한 부당한 요구</li>
+			<li>협력업체 선정의 공정성 결여 등 계약 관련 불만 사항</li>
+			<li>회계 관련 불만 사항(데이터의 조작, 대금 지연 등)</li>
+			<li>금품 · 접대 · 편의의 수수 행위</li>
+			</ul>
+			<ul class="pop_lst">
+			<li>재산에 대한 공동 취득 요구 및 금전대차 등의 요구</li>
+			<li>회사 공금횡령, 회사 자산의 유용 등 부정, 비리 행위</li>
+			<li>회사 정보의 유출 및 타사 비공개 정보의 부당한 취득</li>
+			<li>기타 기업윤리를 위반하거나 기업문화를 해치는 행위 등</li>
+			</ul>
+		</div>
+		<div class="pop_dsc">
+			<p class="pop_dsc_txt"><em class="point">어떠한 경우라도 상담 및 신고 내용은 비공개로 접수·처리되어 상담자의 신분은 철저하게 보호됩니다.</em><br>자료가 부정확하거나 사실에 근거하지 않은 욕설, 비방글을 입력한 경우에는 처리되지 않으니<br>가능한 구체적으로 작성하여 주시기 바랍니다.</p>
+		</div>
+		<form id="subForm" method="post" enctype="multipart/form-data">
+			<fieldset>
+			<legend>상담/신고하기 정보입력</legend>
+				<div class="form_section">
+					<div class="input_txt_wrap">
+						<!-- [D] input 활성화(커서 진입 시) 시 display:none, input 비활성화(커서 진출 시) 시 display:block -->
+						<p class="style_input_box" style="display:block">
+							<!-- [D] sel_val의 텍스트 교체적용 필요(input value 에 적용되는 텍스트로 교체 필요) -->
+							<span class="sel_val">제목</span><span class="default_item"></span>
+						</p>
+						<input type="text" id="" name="" value="">
+						<p class="required_txt"><span class="default_item"></span> 필수 기재 항목입니다.</p>
+					</div>
+					<!-- [D] 유효성 검사결과 오류확인 시 wrong 클래스 추가 필 -->
+					<div class="input_textarea">
+						<label for="in_textarea">세부내용<span class="default_item"></span></label>
+						<textarea id="in_textarea" name="" cols="20" rows="4" style="height:100px"></textarea>
+					</div>
+					<!-- [D] 첨부파일 첨부시 add_file 클래스 추가 필요 -->
+					<div class="input_file">
+						<label for="in_file">제안서 파일첨부</label>
+						<!-- [D] 첨부파일 첨부시 value에 파일명 추가 필요 -->
+						<input type="text" id="in_file" name="" value="제안서 파일첨부">
+						<span class="btn_file"><label for="filename" class="blind">첨부파일</label><input type="file" id="filename" name="" class="upload"></span>
+						<button type="button" class="btn_delete_file"><span class="blind">파일삭제</span></button>
+					</div>
+					<div class="input_box qua anonymity">
+						<input type="text" id="" name="" value="" placeholder="이름">
+						<div class="chk_area">
+							<span class="input_chk on">
+								<input type="checkbox" id="check2" name="check2">
+								<label id="lbl_chk_2" for="check2" class="lbl"><span class="sp_ir ico_chk"></span><strong>익명</strong>익명으로 작성 시 회신은 [처리결과 확인] 메뉴에서 직접 확인만 가능합니다.</label>
+							</span>
+						</div>
+					</div>
+					<div class="input_txt_wrap w_size email">
+						<!-- [D] input 활성화(커서 진입 시) 시 display:none, input 비활성화(커서 진출 시) 시 display:block -->
+						<p class="style_input_box" style="display:block">
+							<!-- [D] sel_val의 텍스트 교체적용 필요(input value 에 적용되는 텍스트로 교체 필요) -->
+							<span class="sel_val">이메일</span><span class="default_item"></span>
+						</p>
+						<input type="text" id="" name="" value="">
+					</div>
+					<div class="input_txt_wrap w_size phone">
+						<!-- [D] input 활성화(커서 진입 시) 시 display:none, input 비활성화(커서 진출 시) 시 display:block -->
+						<p class="style_input_box" style="display:block">
+							<!-- [D] sel_val의 텍스트 교체적용 필요(input value 에 적용되는 텍스트로 교체 필요) -->
+							<span class="sel_val">연락처</span><span class="default_item"></span>
+						</p>
+						<input type="text" id="" name="" value="">
+					</div>
+					<div class="select_box w_size reply">
+						<p class="style_select_box">
+							<!-- [D] sel_val의 텍스트 교체적용 필요(option 중 선택된 텍스트로 교체 필요) -->
+							<span class="sel_val">회신방법</span><span class="default_item"></span>
+						</p>
+						<select id="prosite2" name="proposal.prosite2" class="sel">
+							<option value="">회신방법</option>
+							<option value="email">e-mail</option>
+							<option value="mail">mail</option>
+							<option value="phone">phone</option>
+							<option value="case">case</option>
+							<option value="case2">case2</option>
+						</select>
+					</div>
+					<div class="input_box qua first">
+						<input type="password" id="" name="" value="" placeholder="비밀번호">
+					</div>
+					<div class="input_box qua">
+						<input type="password" id="" name="" value="" placeholder="비밀번호 확인">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<div class="terms_wrap first">
+			<h3 class="terms_tit">개인정보 수집 및 이용에 대한 안내</h3>
+			<div class="terms_txt_wrap">
+				<p class="terms_txt">NHN엔터테인먼트㈜는 NHN엔터테인먼트㈜ 및 관계사 임직원의 불공정한 업무처리, 또는 지위를 이용한 부당한 요구 등에 대한 상담 및 신고접수를 위해 아래와 같이 개인정보를 수집하고 있습니다. 단, 익명으로 작성하시는 분들께는 개인정보를 수집하지 않고 있습니다.</p>
+				<ol class="terms_lst2">
+				<li>1. 수집 개인정보 항목 : 전화번호, 이메일주소, 성명, 비밀번호</li>
+				<li>2. 개인정보의 수집 및 이용목적 : 상담/신고 접수 및 처리결과 회신</li>
+				<li>3. 개인정보의 이용기간 : 개인정보의 수집 및 이용목적 달성 후, 해당 개인정보를 지체없이 파기합니다.</li>
+				<li>4. 동의거부 권리 안내 : 위와 같은 개인정보 수집 동의를 거부할 수 있습니다. 다만 동의를 거부하는 경우 상담·신고 신청이 제한될 수 있습니다.<br>단, ‘익명’으로는 개인정보를 입력하지 않고 신청이 가능합니다.</li>
+				</ol>
+			</div>
+			<div class="terms_agree">
+				<span class="input_chk">
+					<input type="checkbox" id="check1" name="check1">
+					<label id="lbl_chk_1" for="check1" class="lbl"><span class="sp_ir ico_chk"></span>개인정보 수집 및 이용에 대해서 동의합니다.</label>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="popup_footer">
+		<div class="btn_foot_area">
+			<button type="submit" class="btn btn_invert btn_s">등록</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

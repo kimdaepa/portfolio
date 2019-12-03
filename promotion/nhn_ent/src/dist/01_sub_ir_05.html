@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="sub_page">
+<!-- [D] 스킵 네비게이션 -->
+<div id="u_skip" class="u_skip">
+	<a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>네이게이션으로 바로가기</span></a>
+	<a href="#content" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<div class="ne_header_inner_con">
+				<h1 class="nhnent"><a href="#" class="nhnent_link"><span class="blind">NHN Entertainment</span></a></h1>
+				<nav id="nav" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<li class="nav_item on"><a href="#" class="nav_link">NHN Ent.</a></li>
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">Service</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">PR</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR</a></li>
+						<li class="nav_item nav_recruit"><a href="#" class="nav_link">Recruit</a></li>
+						<li class="nav_item nav_locale on"><a href="#" class="nav_link">KR</a></li>
+						<li class="nav_item nav_locale"><a href="#" class="nav_link">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="ne_header_inner_con_over">
+				<nav id="nav2" class="ne_global_nav" role="navigation">
+					<!-- [D] 우측 기준일 경우 right_nav_lst 클래스 추가 -->
+					<ul class="global_nav_lst right_nav_lst">
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">기업지배구조</a></li>
+						<li class="nav_item on"><a href="#" class="nav_link">공시정보</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">주가정보</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">재무재표</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR일정</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR자료실</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">일반공고</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<main id="container" class="sub" role="main">
+		<section class="section sub_ir no_tab">
+			<div class="tit_box">
+				<h2 class="section_tit">공시정보</h2>
+			</div>
+			<div class="data_range_box ir_schedule">
+				<div class="form_table">
+					<div class="form_table_cell">
+						<div class="cell_inner" style="width:100px">
+							<!-- [D] 활성화 on 추가 -->
+							<!-- [D] 옵션 선택 후 클래스 select 추가 -->
+							<div class="select_box select">
+								<p class="style_select_box">
+									<a href="#">
+										<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+										<span class="sel_val">3개월</span>
+									</a>
+								</p>
+								<div class="sel_option">
+									<ul class="list">
+										<li><a href="#">9개월</a></li>
+										<li><a href="#">6개월</a></li>
+										<li><a href="#">3개월</a></li>
+										<li><a href="#">1개월</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="cell_inner date_pick">
+							<!-- [D] 활성화 on 추가 -->
+							<div class="search_date" style="width:135px">
+								<span class="input_datepicker">
+									<label for="date" class="blind">날짜</label>
+									<input type="text" class="input_txt input_date" id="date" value="2016.03.25" readonly="">
+									<button type="button" class="btn_cal"><span class="sp_ico ico_cal"><span class="blind">달력 열기</span></span></button>
+								</span>
+							</div>
+							<div class="txt_bar"></div>
+							<!-- [D] 활성화 on 추가 -->
+							<div class="search_date" style="width:135px">
+								<span class="input_datepicker">
+									<label for="date" class="blind">날짜</label>
+									<input type="text" class="input_txt input_date" id="date" value="2016.03.25" readonly="">
+									<button type="button" class="btn_cal"><span class="sp_ico ico_cal"><span class="blind">달력 열기</span></span></button>
+								</span>
+							</div>
+						</div>
+						<a href="#" class="btn btn_invert">조회</a>
+						<a href="#" class="btn chart">공시차트</a>
+						<a href="#" target="_blank" class="btn btn_default btn_ir_top">공시정보관리규정 <span class="sp_ico btn_download"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="ir_article add_range">
+				<div class="tbl_wrap">
+					<table class="tbl padding_left_type">
+		                <caption><span class="blind">공시정보 테이블</span></caption>
+		                <colgroup>
+			                <col style="width:86px">
+			                <col style="width:180px">
+			                <col style="">
+			                <col style="width:200px">
+		                </colgroup>
+		                <thead>
+		                <tr>
+		                    <th scope="col">번호</th>
+		                    <th scope="col" class="align_left">시간</th>
+		                    <th scope="col" class="align_left">기업설명회</th>
+		                    <th scope="col" class="align_left">제출의무자</th>
+		                </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td>26</td>
+		                        <td class="align_left">2018-06-22 16:02</td>
+		                        <td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+		                        <td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>25</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>24</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>23</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>22</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>21</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>20</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>19</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>18</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                    <tr>
+		                        <td>17</td>
+								<td class="align_left">2018-06-22 16:02</td>
+								<td class="align_left"><a href="#" class="table_title">기업설명회(IR) 개최(안내공시)</a></td>
+								<td class="align_left">엔에이치엔엔터테인먼트</td>
+		                    </tr>
+		                </tbody>
+		            </table>
+			    </div>
+				<div class="pagenav_wrap">
+					<ul class="lst_pagenav">
+						 <li class="pagenav"><a href="#" class="pagenav_prev"><span class="btn_page pre">이전</span></a></li>
+						<li class="pagenav on"><a href="#" class="btn_page">1</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">2</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">3</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">4</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">5</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">6</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">7</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">8</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">9</a></li>
+						<li class="pagenav"><a href="#" class="btn_page">10</a></li>
+						<li class="pagenav"><a href="#" class="pagenav_next"><span class="btn_page next">다음</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- //container -->
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="legal_lst">
+				<li class="legal_item">
+					<a href="#" class="legal_link">제휴제안</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link">기업윤리상담센터</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link"><strong>개인정보 처리방침</strong></a>
+				</li>
+			</ul>
+			<ul class="sub_co_lst">
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Global Site</a></li>
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Family Site</a></li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

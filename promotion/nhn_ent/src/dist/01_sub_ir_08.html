@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NHN Entertainment</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="sub_page">
+<!-- [D] 스킵 네비게이션 -->
+<div id="u_skip" class="u_skip">
+	<a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>네이게이션으로 바로가기</span></a>
+	<a href="#content" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<div class="ne_header_inner_con">
+				<h1 class="nhnent"><a href="#" class="nhnent_link"><span class="blind">NHN Entertainment</span></a></h1>
+				<nav id="nav" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<li class="nav_item on"><a href="#" class="nav_link">NHN Ent.</a></li>
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">Service</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">PR</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR</a></li>
+						<li class="nav_item nav_recruit"><a href="#" class="nav_link">Recruit</a></li>
+						<li class="nav_item nav_locale on"><a href="#" class="nav_link">KR</a></li>
+						<li class="nav_item nav_locale"><a href="#" class="nav_link">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="ne_header_inner_con_over">
+				<nav id="nav2" class="ne_global_nav" role="navigation">
+					<!-- [D] 우측 기준일 경우 right_nav_lst 클래스 추가 -->
+					<ul class="global_nav_lst right_nav_lst">
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">기업지배구조</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">공시정보</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">주가정보</a></li>
+						<li class="nav_item on"><a href="#" class="nav_link">재무재표</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR일정</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR자료실</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">일반공고</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<main id="container" class="sub" role="main">
+		<section class="section sub_ir">
+			<div class="tit_box">
+				<h2 class="section_tit">제무제표</h2>
+				<div class="content_nav">
+				    <ul class="content_nav_lst">
+					    <li class="content_nav_item on">
+							<a href="#"><span>연결재무제표</span></a>
+						</li>
+					    <li class="content_nav_item">
+							<a href="#"><span>별도재무제표</span></a>
+						</li>
+				    </ul>
+				</div>
+			</div>
+			<div class="ir_wrap">
+		        <div class="ir_article">
+					<nav class="ir_nav col_2">
+						<ul class="ir_nav_list">
+							<li class="ir_nav_item on"><a href="#" class="ir_nav_name">재무상태표</a></li>
+							<li class="ir_nav_item "><a href="#" class="ir_nav_name">손익계산서</a></li>
+							<li class="ir_nav_item "><a href="#" class="ir_nav_name">현금흐름표</a></li>
+						</ul>
+					</nav>
+					<div class="ir_content">
+						<div class="data_range_box ir_schedule middle_sec">
+							<div class="form_table">
+								<div class="form_table_cell">
+									<div class="cell_inner" style="width:100px">
+										<!-- [D] 활성화 on 추가 -->
+										<!-- [D] 옵션 선택 후 클래스 select 추가 -->
+										<div class="select_box select">
+											<p class="style_select_box">
+												<a href="#">
+													<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+													<span class="sel_val">분기</span>
+												</a>
+											</p>
+											<div class="sel_option">
+												<ul class="list">
+													<li><a href="#">1분기</a></li>
+													<li><a href="#">2분기</a></li>
+													<li><a href="#">3분기</a></li>
+													<li><a href="#">4분기</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="cell_inner short" style="width:140px">
+										<!-- [D] 활성화 on 추가 -->
+										<!-- [D] 옵션 선택 후 클래스 select 추가 -->
+										<div class="select_box select">
+											<p class="style_select_box">
+												<a href="#">
+													<!-- [D] sel_val의 텍스트 교체적용 필요(sel_option 중 선택된 텍스트로 교체 필요) -->
+													<span class="sel_val">2017년 1분기</span>
+												</a>
+											</p>
+											<div class="sel_option">
+												<ul class="list">
+													<li><a href="#">2017년 4분기</a></li>
+													<li><a href="#">2017년 3분기</a></li>
+													<li><a href="#">2017년 2분기</a></li>
+													<li><a href="#">2017년 1분기</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="sub_info">단위 : 백만원</div>
+								</div>
+							</div>
+						</div>
+						<div class="tbl_wrap padding_border finance_table">
+							<table class="tbl">
+				                <caption><span class="blind">연결재무제표 테이블</span></caption>
+				                <colgroup>
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="">
+				                </colgroup>
+				                <thead>
+				                <tr>
+				                    <th scope="col" class="align_left">항목</th>
+				                    <th scope="col" class="align_right">2017년 1분기</th>
+									<th scope="col" class="align_right">2017년 2분기</th>
+									<th scope="col" class="align_right">2017년 3분기</th>
+									<th scope="col" class="align_right">2017년 4분기</th>
+				                </tr>
+				                </thead>
+				                <tbody>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												유동자산
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												비유동자산
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												자산총계
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												유동부채
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												비유동부채
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												부채총계
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												자본금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												자본잉여금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												자본조정
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												기타포괄손익누계액
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												이익잉여금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												비지배지분
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+				                </tbody>
+								<tfoot>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												자본총계
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												자본 및 부채 총계
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+								</tfoot>
+				            </table>
+	                    </div>
+						<div class="tbl_wrap padding_border finance_table">
+							<table class="tbl">
+				                <caption><span class="blind">연결재무제표 테이블</span></caption>
+				                <colgroup>
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="">
+				                </colgroup>
+				                <thead>
+				                <tr>
+				                    <th scope="col" class="align_left">항목</th>
+				                    <th scope="col" class="align_right">2017년 1분기</th>
+									<th scope="col" class="align_right">2017년 2분기</th>
+									<th scope="col" class="align_right">2017년 3분기</th>
+									<th scope="col" class="align_right">2017년 4분기</th>
+				                </tr>
+				                </thead>
+				                <tbody>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												영업수익
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												영업비용
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												영업이익
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												영업외수익
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												영업외비용
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												법인세비용차감전이익
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												법인세비용
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												당기순이익
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												기타포괄손익
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="border_bottom_area">
+				                        <th class="align_left">
+											<div>
+												총포괄 이익
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+								</tbody>
+				            </table>
+	                    </div>
+						<div class="tbl_wrap padding_border finance_table">
+							<table class="tbl">
+				                <caption><span class="blind">연결재무제표 테이블</span></caption>
+				                <colgroup>
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="width:162px">
+									<col style="">
+				                </colgroup>
+				                <thead>
+				                <tr>
+				                    <th scope="col" class="align_left">항목</th>
+				                    <th scope="col" class="align_right">2017년 1분기</th>
+									<th scope="col" class="align_right">2017년 2분기</th>
+									<th scope="col" class="align_right">2017년 3분기</th>
+									<th scope="col" class="align_right">2017년 4분기</th>
+				                </tr>
+				                </thead>
+				                <tbody>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												영업활동으로인한현금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												흐름
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												투자활동으로인한현금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												흐름
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												재무활동으로인한현금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="sum_area">
+				                        <th class="align_left">
+											<div>
+												흐름
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												현금의증가(감소)
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												기초의현금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr>
+				                        <th class="align_left">
+											<div>
+												환율변동효과
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+									<tr class="border_bottom_area">
+				                        <th class="align_left">
+											<div>
+												기말의현금
+											</div>
+										</th>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+										<td class="align_right">
+											<div class="number">719,986</div>
+										</td>
+				                    </tr>
+								</tbody>
+				            </table>
+	                    </div>
+					</div>
+				</div>
+		    </div>
+		</section>
+	</main>
+	<!-- //container -->
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="legal_lst">
+				<li class="legal_item">
+					<a href="#" class="legal_link">제휴제안</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link">기업윤리상담센터</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link"><strong>개인정보 처리방침</strong></a>
+				</li>
+			</ul>
+			<ul class="sub_co_lst">
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Global Site</a></li>
+				<li class="sub_co"><a href="#" target="_blank" class="sp_ico_after">Family Site</a></li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

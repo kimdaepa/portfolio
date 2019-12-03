@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>NHN Entertainment</title>
+<link rel="stylesheet" href="css/common.css">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<!-- [D] local nav 필요 메뉴 선택 시 .is_local_nav 추가 -->
+<!-- [D] 메인페이지 .main 추가 -->
+<body class="main">
+<!-- [D] 스킵 네비게이션 -->
+<div id="u_skip" class="u_skip">
+	<a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>네비게이션으로 바로가기</span></a>
+	<a href="#container" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<div class="ne_header_inner_con">
+				<h1 class="nhnent"><a href="#" class="nhnent_link"><span class="blind">NHN Entertainment</span></a></h1>
+				<nav id="nav" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<li class="nav_item on"><a href="#" class="nav_link">NHN Ent.</a></li>
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item"><a href="#" class="nav_link">Service</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">PR</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">IR</a></li>
+						<li class="nav_item nav_recruit"><a href="#" class="nav_link">Recruit</a></li>
+						<li class="nav_item nav_locale on"><a href="#" class="nav_link">KR</a></li>
+						<li class="nav_item nav_locale"><a href="#" class="nav_link">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="ne_header_inner_con_over">
+				<nav id="nav2" class="ne_global_nav" role="navigation">
+					<ul class="global_nav_lst">
+						<!-- [D] 항목 선택 시 .on 추가 -->
+						<li class="nav_item on"><a href="#" class="nav_link">회사소개</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">주요 관계사</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">글로벌 네트워크</a></li>
+						<li class="nav_item"><a href="#" class="nav_link">정보보호인증</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<!-- container -->
+	<main id="container" class="container">
+		<div class="spot">
+			<h2 class="blind">서비스 상세</h2>
+			<ul class="slide_list">
+				<!-- [D] fade in/out 제어를 위한 z-index, opacity 값 변경  -->
+				<li class="slide1" style="z-index:7;opacity:1;background-image:url(img/main/bg_main_slide1.jpg)">
+					<div class="text_box">
+						<h3 class="title">Play Hard, Work Smart!</h3>
+						<p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳,</p>
+					</div>
+				</li>
+				<li class="slide2" style="z-index:6;opacity:0;background-image:url(img/main/bg_main_slide2.jpg)">
+					<div class="text_box">
+						<h3 class="title">slide2 Let the World Play with Us!</h3>
+						<p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳,</p>
+					</div>
+				</li>
+				<li class="slide3" style="z-index:5;opacity:0;background-image:url(img/main/bg_main_slide3.jpg)">
+					<div class="text_box">
+						<h3 class="title">slide3 Let the World Play with Us!</h3>
+						<p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳,</p>
+					</div>
+				</li>
+				<li class="slide4" style="z-index:4;opacity:0;background-image:url(img/main/bg_main_slide4.jpg)">
+					<div class="text_box">
+						<h3 class="title">slide4 Let the World Play with Us!</h3>
+						<p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳,</p>
+					</div>
+				</li>
+				<li class="slide5" style="z-index:3;opacity:0;background-image:url(img/main/bg_main_slide5.jpg)">
+					<div class="text_box">
+						<h3 class="title">slide4 Let the World Play with Us!</h3>
+						<p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳,</p>
+					</div>
+				</li>
+				<li class="slide6" style="z-index:2;opacity:0;background-image:url(img/main/bg_main_slide6.jpg)">
+					<div class="text_box">
+						<h3 class="title">slide4 Let the World Play with Us!</h3>
+						<p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳,</p>
+					</div>
+				</li>
+				<li class="slide7" style="z-index:1;opacity:0;background-image:url(img/main/bg_main_slide7.jpg)">
+					<div class="text_box">
+						<h3 class="title">slide4 Let the World Play with Us!</h3>
+						<p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳,</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="section time_graph">
+			<div class="control_box">
+				<button type="button" class="sp_ico_after btn_left"><span class="blind">서비스 상세 이전 보기</span></button>
+				<button type="button" class="sp_ico_after btn_stop"><span class="blind">서비스 상세 동작 정지</span></button>
+				<button type="button" class="sp_ico_after btn_right"><span class="blind">서비스 상세 다음 보기</span></button>
+			</div>
+			<div class="graph">
+				<!-- [D] 진행률에 따른 width 0~100% 값 제어 / 대체텍스트 값에 맞게 변경 -->
+				<p class="bar" style="width:20%"><span class="blind"> 10%</span></p>
+			</div>
+			<p class="page_text">01/04</p>
+		</div>
+		<div class="section service">
+			<ul class="service_list">
+				<li class="item hangame"><a href="https://www.hangame.com/" target="_blank"><span class="blind">HANGAME</span></a></li>
+				<li class="item payco"><a href="https://www.payco.com/" target="_blank"><span class="blind">PAYCO</span></a></li>
+				<li class="item toast"><a href="https://toast.com/" target="_blank"><span class="blind">TOAST</span></a></li>
+				<li class="item comico"><a href="https://comico.kr/" target="_blank"><span class="blind">COMICO</span></a></li>
+				<li class="item bugs"><a href="https://music.bugs.co.kr/" target="_blank"><span class="blind">BUGS!</span></a></li>
+			</ul>
+		</div>
+		<div class="section company_info">
+			<h3 class="blind">회사 소식</h3>
+			<ul class="column_box">
+				<li class="column stock text_over">
+					<h4 class="title">STOCK</h4>
+					<dl class="stock_stat">
+						<dt class="blind">현재주가</dt>
+						<dd class="stock_price">64,600</dd>
+						<dt class="blind">전일대비</dt>
+						<dd>0 (0.00%)</dd>
+						<dt class="blind">등락가</dt>
+						<dd>+11.05</dd>
+						<dt class="blind">등락률</dt>
+						<dd>+0.44%</dd>
+						<dt class="blind">KOSPI 지수</dt>
+						<dd class="kospi">KOSPI 2496.02</dd>
+					</dl>
+				</li>
+				<li class="column press">
+					<div class="text_over">
+						<h4 class="title">PRESS</h4>
+						<p class="press_text">
+							<a href="#">NHN엔터, 오픈소스 프로젝트 ‘TOAST UI’ 공식 브랜드 홈페이지 오픈</a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<!-- //container -->
+	<footer class="footer">
+		<div class="main_notice">
+			<p class="text_over">
+				<strong>NOTICE</strong>
+				<a href="#">NHN엔터테인먼트 '개인정보처리방침' 변경에 대한 안내</a>
+			</p>
+		</div>
+		<div class="footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="legal_lst">
+				<li class="legal_item">
+					<a href="#" class="legal_link">제휴제안</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link">기업윤리상담센터</a>
+				</li>
+				<li class="legal_item">
+					<a href="#" class="legal_link"><strong>개인정보 처리방침</strong></a>
+				</li>
+			</ul>
+			<ul class="sub_co_lst">
+				<!-- [D] 활성화 active 추가 -->
+				<li class="sub_co active">
+					<a href="#" target="_blank" class="sp_ico_after">
+						<span>GLOBAL SITE</span>
+					</a>
+					<div class="drop_box">
+						<ul class="list">
+							<li><a href="#" class="on">NHN ENTERTAINMENT</a></li>
+							<li><a href="#">NHN JAPAN</a></li>
+							<li><a href="#">NHN PLAYART</a></li>
+							<li><a href="#">NHN HANGAME</a></li>
+							<li><a href="#">NHN TECHORUS</a></li>
+							<li><a href="#">NHN SAVAWAY</a></li>
+							<li><a href="#">NHN COMICO</a></li>
+							<li><a href="#">NHN CAPITAL</a></li>
+							<li><a href="#">NHN ENT. ASIA</a></li>
+							<li><a href="#">NHN ENT. GLOBAL</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="sub_co">
+					<a href="#" target="_blank" class="sp_ico_after">
+						<span>FAMILY SITE</span>
+					</a>
+					<div class="drop_box">
+						<ul class="list">
+							<li><a href="#" class="active">NHN PAYCO</a></li>
+							<li><a href="#">NHN STARFISH</a></li>
+							<li><a href="#">NHN BIGFOOT</a></li>
+							<li><a href="#">NHN ENT. SERVICE</a></li>
+							<li><a href="#">WISECAT</a></li>
+							<li><a href="#">NHN KCP</a></li>
+							<li><a href="#">NHN WETOO</a></li>
+							<li><a href="#">NHN TICKETLINK</a></li>
+							<li><a href="#">NHN GODO</a></li>
+							<li><a href="#">ACCOMMATE</a></li>
+							<li><a href="#">BEE 3 STARS</a></li>
+							<li><a href="#">OUTDOOR GLOBAL</a></li>
+							<li><a href="#">NHN BUGS</a></li>
+							<li><a href="#">NHN EDU</a></li>
+							<li><a href="#">INCRUIT</a></li>
+							<li><a href="#">PNP SECURE</a></li>
+							<li><a href="#">NHN AD</a></li>
+							<li><a href="#">NHN ACE</a></li>
+							<li><a href="#">NHN INVESTMENT</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer>
+</div>
+<!-- //wrap -->
+</body>
+</html>
