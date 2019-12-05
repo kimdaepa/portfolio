@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'nanumgodic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nanum-Gothic'), local('NanumGothic'),
+       url('./font/NanumGothic.woff') format('woff'), /* Modern Browsers */
+}
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{
+	margin:0;
+	padding:0;
+	-webkit-text-size-adjust:none
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	font-family: 'nanumgodic',Sans-serif;
+	font-size:13px;
+	color:#333;
+	-webkit-text-size-adjust:none
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:12px;
+	text-align:left
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0
+}
+img,fieldset,iframe{
+	border:0 none
+}
+img{
+	vertical-align:top
+}
+li,ol{
+	list-style:none
+}
+a{
+	color:#555;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline
+}
+em,address{
+	font-style:normal
+}
+button,label{
+	cursor:pointer
+}
+button{
+	border:0;
+	background:transparent
+}
+button::-moz-focus-inner{
+	padding:0;
+	border:0
+}
+input[type=text],input[type=password],input[type=image],textarea,button{
+	font-family:'Poppins',Sans-serif;
+	-webkit-appearance:none;
+	-webkit-text-size-adjust:none;
+	-webkit-border-radius:0
+}
+select{
+	font-family:'Poppins',Sans-serif;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none
+}
+select::-ms-expand{
+	display:none
+}
+textarea{
+	overflow:auto
+}
+hr{
+	display:none
+}
+legend{
+	*width:0
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
+	display:block
+}
+.blind,legend,caption span{
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	width:1px;
+	height:1px;
+	font-size:0;
+	line-height:0;
+	white-space:nowrap;
+	*text-indent:-999em
+}
+.input_txt, textarea{
+	*margin:-1px 0
+}
+iframe{
+	width:100%
+}
+.company-color,
+.company-color-hover:hover,
+.gnb li.active a {
+    color: #e30921;
+}
+
+.wrap {
+    overflow: auto;
+    min-width: 1000px;
+    padding-top: 90px;
+    height: calc(100% - 90px);
+}
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0 0 10px 0 #C7C7C7;
+    box-shadow: 0 0 10px 0 #C7C7C7;
+    z-index: 100;
+}
+header h1 {
+    float: left;
+    font-size: 35px;
+    line-height: 50px;
+    color: #333;
+}
+header h1 a:hover {
+    text-decoration: none;
+}
+header .gnb {
+    float: right;
+}
+header:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+header .gnb li {
+    float: left;
+    margin-left: 20px;
+    font-size: 25px;
+    line-height: 50px;
+}
+header .gnb li:first-child {
+    margin-left: 0;
+}
+header .gnb li:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+header .gnb li a {
+    color: #333;
+}
+header .gnb li a:hover {
+    text-decoration: none;
+}
+
+.container {
+    height: 100%;
+}
+.container > article {
+    width: 100%;
+}
+.container > article:last-child {
+    padding-bottom: 80px;
+}
+.container > article > section{
+    width: 900px;
+    padding: 20px 50px;
+    margin: 0 auto;
+}
+.content-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    margin-top: -90px;
+    transform: translate(-50%, -50%);
+}
+.content-intro h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content-intro p {
+    font-size: 30px;
+    text-align: center;
+}
+.content-intro p + p {
+    margin-top: 10px;
+}
+.container > article > .article-top{
+    width: 900px;
+    padding: 20px 50px;
+    margin: 0 auto;
+}
+.container > article:first-child > .article-top{
+    padding-top: 40px;
+    line-height: 35px;
+}
+.container > article > .article-top h2 {
+    font-size: 30px;
+    float: left;
+}
+.container > article > .article-top .right-box {
+    font-size: 20px;
+    float: right;
+}
+.container > article > .article-top:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.container > article > section h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container > article > section table{
+    width: 100%;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.container > article > section table th {
+    padding:10px 0; 
+    border-top:1px solid #e5e5e5; 
+    background-color:#f8fcfc;
+    font-weight:bold}
+.container > article > section table td {
+    padding:8px;
+    border-top:1px solid #e5e5e5;
+    word-break: keep-all;
+}
+.container > article > section table td p {
+    line-height:20px
+}
+.container > article > section .text{
+    font-size: 15px;
+}
+.container > article > section .img-box {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
