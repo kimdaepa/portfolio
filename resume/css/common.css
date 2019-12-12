@@ -178,9 +178,11 @@ header .gnb li a:hover {
     padding-bottom: 80px;
 }
 .container > article > section{
-    width: 900px;
+    width: 1000px;
     padding: 20px 50px;
     margin: 0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 .content-intro {
     position: absolute;
@@ -239,11 +241,15 @@ header .gnb li a:hover {
     padding:10px 0; 
     border-top:1px solid #e5e5e5; 
     background-color:#f8fcfc;
-    font-weight:bold}
+    font-weight:bold
+}
 .container > article > section table td {
     padding:8px;
     border-top:1px solid #e5e5e5;
     word-break: keep-all;
+}
+.container > article > section table td a{
+    word-break: break-all;
 }
 .container > article > section table td p {
     line-height:20px
@@ -254,4 +260,21 @@ header .gnb li a:hover {
 .container > article > section .img-box {
     padding: 0;
     margin: 0 0 20px 0;
+}
+
+.wrap.response {
+    min-width: 320px;
+}
+.wrap.response .container > article > section {
+    width: 100%;
+    max-width: 900px;
+    min-width: 320px;
+    padding: 20px;
+}
+.wrap.response .container > article > section .img-box {
+    text-align: center;
+}
+.wrap.response .container > article > section .img-box img {
+    max-width: 900px;
+    width: 100%
 }
