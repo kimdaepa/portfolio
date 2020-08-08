@@ -113,7 +113,6 @@ iframe{
 }
 
 .wrap {
-    overflow: auto;
     min-width: 1000px;
     padding-top: 90px;
     height: calc(100% - 90px);
@@ -124,6 +123,7 @@ header {
     left: 0;
     right: 0;
     height: 50px;
+    min-width: 850px;
     padding: 20px 50px;
     background-color: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: 0 0 10px 0 #C7C7C7;
@@ -265,16 +265,45 @@ header .gnb li a:hover {
 .wrap.response {
     min-width: 320px;
 }
+.wrap.response .header{
+    min-width: 320px;
+}
 .wrap.response .container > article > section {
     width: 100%;
     max-width: 900px;
     min-width: 320px;
     padding: 20px;
 }
+.wrap.response .container > article > .article-top{
+    width: 100%;
+    max-width: 900px;
+    min-width: 320px;
+    padding: 20px 40px;
+}
 .wrap.response .container > article > section .img-box {
     text-align: center;
+    max-height: 760px;
+    overflow: hidden;
 }
 .wrap.response .container > article > section .img-box img {
     max-width: 900px;
     width: 100%
 }
+
+@media (max-width: 590px) {
+    header {
+        min-width: 280px;
+        padding: 20px 20px;
+        height: auto;
+    }
+    header h1 {
+        float: left;
+        font-size: 17px;
+        line-height: 25px;
+        color: #333;
+    }
+    header .gnb li {
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 25px;
+    }
