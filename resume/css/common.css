@@ -247,12 +247,23 @@ header .gnb li a:hover {
     padding:8px;
     border-top:1px solid #e5e5e5;
     word-break: keep-all;
+	text-align: left;
 }
 .container > article > section table td a{
     word-break: break-all;
 }
 .container > article > section table td p {
     line-height:20px
+}
+.container > article > section table td dl {
+    padding: 10px 0;
+}
+.container > article > section table td dl dt {
+	margin-bottom: 10px;
+    font-weight: 700;
+}
+.container > article > section table td dl dd {
+	padding-left: 10px;
 }
 .container > article > section .text{
     font-size: 15px;
